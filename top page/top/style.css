@@ -1,0 +1,301 @@
+body{
+ padding-top: 50px;
+ 
+ font-family:"myFont";
+}
+
+
+@font-face{
+    font-family:myFont;
+    src:url(../Hind_Siliguri/HindSiliguri-Regular.ttf)
+}
+
+
+
+
+
+
+
+
+
+.container{
+    max-width:1300px;
+    
+}
+ body a{
+    text-decoration: none;
+    color: black;
+}
+.btn1{
+   
+    width: 150px;
+}
+
+
+.bangladesh{
+    border:3px solid aqua;
+    padding-right: 0px;
+    width: 100px;
+    text-align: center;
+}
+
+
+
+.bangladesh:hover{
+    background-color: aquamarine;
+    
+}
+.btn1:hover{
+    background-color: green;
+    color:red;
+    width: 150px;
+}
+.media img{
+   
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+   
+}
+.media pre{
+    color:grey;
+    font-size: 12px;
+    
+}
+.icon{
+    background: linear-gradient(to bottom, #00ff00 0%, #ff3300 100%);
+}
+
+.icon ul li{
+    
+position: relative;
+    text-decoration: none;
+    display: block;
+    padding-top{
+        10px;
+    }
+}
+.col-3{
+    padding-bottom:15px;
+    border-bottom: 3px solid #eeeeee;
+   padding-top: 15px;
+}
+.images{
+    background-color:#eeeeee;
+    border-bottom:2px solid #000000;
+    padding-bottom: 10px;
+}
+.imag-content{
+    border-bottom: 2px solid rgb(242, 235, 243);
+    padding-left:10px;
+    padding-right:10px;
+
+
+}
+
+
+footer{
+    background-color:#212121;
+    border-top:3px solid #03b2e3;
+    color:#fff !important
+}
+/*.container ul li{
+
+text-decoration: none;
+}*/
+.footer_title{
+    color:#fff !important
+}
+.ed-footer-sections{
+    width:90%;
+    margin:0 auto;
+    display:flex;
+    align-items:flex-start;
+    flex-wrap:wrap
+}
+ 
+ .col-xl-2 {
+ 	margin-top:0px;
+ }
+
+
+.col-xl-2 ul li{
+text-decoration: none;
+ color: gray;
+text-align: center;
+list-style: none;
+
+
+}
+
+
+
+
+
+.Top-Trends ul li{
+	text-decoration: none;
+	display: inline-block;
+	border:1px solid #fff;
+	margin-right: 10px;
+	color: gray;
+}
+
+
+.icons2 {
+	text-decoration: none;
+	padding-right: 10px;
+	display: inline-block;
+}
+.Top-Trends li:hover{
+	background-color:#00FF00;
+	color: #FF0000;
+}
+
+.second-footer a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.last a{
+	text-decoration: none;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color:#212121;
+    border-top:3px solid #03b2e3;
+    color:#fff !important
+}
+/*.container ul li{
+
+text-decoration: none;
+}*/
+.footer_title{
+    color:#fff !important
+}
+.ed-footer-sections{
+    width:90%;
+    margin:0 auto;
+    display:flex;
+    align-items:flex-start;
+    flex-wrap:wrap
+}
+ 
+ /* .col-xl-2 {
+ 	margin-top:0px;
+ } */
+
+
+.col-xl-2 ul li{
+text-decoration: none;
+ color: gray;
+text-align: center;
+list-style: none;
+
+
+}
+
+
+
+
+
+.Top-Trends ul li{
+	text-decoration: none;
+	display: inline-block;
+	border:1px solid #fff;
+	margin-right: 10px;
+	color: gray;
+}
+
+
+.icons2 {
+	text-decoration: none;
+	padding-right: 10px;
+	display: inline-block;
+}
+.Top-Trends li:hover{
+	background-color:#00FF00;
+	color: #FF0000;
+}
+
+.second-footer a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.last a{
+	text-decoration: none;
+	color: #fff;
+}
+
+
+.col-xl-4 ul li{
+ text-decoration: none;
+ display: inline-block;
+ padding-right: 10px;
+}
+.hero2{
+    background-color: 
+#000;
+    border-top:3px solid #03b2e3;
+    color:#fff !important
+}
+.hero2 ul li{
+ text-decoration: none;
+ list-style: none;
+ display: inline-block;
+ 
+ padding-right: 10px;
+ font-weight: 400px;
+
+}
+
+
+/* ..........................................copy start ........................................*/
+.news-demo {
+    background: #fff;
+    padding: 20px;
+    height: 300px;
+  }
+  
+
+
+
+  .news-holder cf{
+      height: 400px;
+  }
+  
+  
+  .news-demo .p {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    margin-top: 70px;
+  }
+  
+  .news-demo .p ~ p {
+    margin-top: 0;
+  }
+  
+  .news-demo .p a {
+    text-decoration: underline;
+  }
+  
+  .news-demo .p a:hover {
+    color: red;
+  }

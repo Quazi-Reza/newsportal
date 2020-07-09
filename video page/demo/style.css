@@ -1,0 +1,142 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:"myFont";
+    
+}
+
+
+
+
+
+@font-face{
+    font-family:myFont;
+    src: url(../Galada/Galada-Regular.ttf);
+}
+
+body a{
+    text-decoration: none;
+    color:black;
+    
+}
+body a:hover{
+    color:blue;
+}
+.top-heading{
+   
+    background-color:#EDEDED;
+}
+
+
+.images{
+    background-color:#eff1f6;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    padding-top:15px;
+}
+
+.emphaty{
+    width: 100%;
+    height: 300px;
+    border-bottom: 2px solid #eeeeee;
+    border-top: 2px solid #eeeeee;
+}
+
+
+
+
+
+
+
+footer{
+    background-color:#212121;
+    border-top:3px solid #03b2e3;
+    color:#fff !important
+}
+/*.container ul li{
+
+text-decoration: none;
+}*/
+.footer_title{
+    color:#fff !important
+}
+.ed-footer-sections{
+    width:90%;
+    margin:0 auto;
+    display:flex;
+    align-items:flex-start;
+    flex-wrap:wrap
+}
+ 
+ /* .col-xl-2 {
+ 	margin-top:0px;
+ } */
+
+
+.col-xl-2 ul li{
+text-decoration: none;
+ color: gray;
+text-align: center;
+list-style: none;
+
+
+}
+
+
+
+
+
+.Top-Trends ul li{
+	text-decoration: none;
+	display: inline-block;
+	border:1px solid #fff;
+	margin-right: 10px;
+	color: gray;
+}
+
+
+.icons2 {
+	text-decoration: none;
+	padding-right: 10px;
+	display: inline-block;
+}
+.Top-Trends li:hover{
+	background-color:#00FF00;
+	color: #FF0000;
+}
+
+.second-footer a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.last a{
+	text-decoration: none;
+	color: #fff;
+}
+
+
+.col-xl-4 ul li{
+ text-decoration: none;
+ display: inline-block;
+ padding-right: 10px;
+}
+.hero2{
+    background-color: 
+#000;
+    border-top:3px solid #03b2e3;
+    color:#fff !important
+}
+.hero2 ul li{
+ text-decoration: none;
+ list-style: none;
+ display: inline-block;
+ 
+ padding-right: 10px;
+ font-weight: 400px;
+
+}
+.col-sm-4{
+
+    box-shadow: 0px 2px 2px rgb(10, 230, 21);
+}

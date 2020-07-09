@@ -1,0 +1,153 @@
+@font-face {
+    font-family: "myFirstFont";
+	src: url("SolaimanLipi-Normal.ttf");
+
+}
+
+
+
+
+
+body{
+	margin:0px;
+	padding:0;
+	font-family:"myFirstFont";
+	border:10px solid #eeeeee;
+	background-color: #fff;
+	font-size:regular;
+}
+
+body a{
+    text-decoration:none;
+    color: #000;
+}
+.firstcontent{
+    border-right: 1px solid#000;
+    padding-right: 7px;
+}
+.media img{
+    width: 64px;
+    height: 64px;
+}
+.media pre{
+color:gray;
+}
+.container{
+    border-bottom: 2px solid#eeeeee;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.media{
+
+border-bottom: 2px solid #eeeeee;
+padding-bottom: 15px;
+padding-top: 15px;
+}
+.read p{
+
+    border:1px solid rgb(139, 216, 23);
+    text-align: center;
+    font-weight: bold;
+
+    
+}
+.content1{
+    background-color: #eeeeee;
+    padding-left: 7px;
+}
+.content1 media{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+
+
+footer{
+    background-color:#212121;
+    border-top:3px solid #03b2e3;
+    color:#fff !important
+}
+/*.container ul li{
+
+text-decoration: none;
+}*/
+.footer_title{
+    color:#fff !important
+}
+.ed-footer-sections{
+    width:90%;
+    margin:0 auto;
+    display:flex;
+    align-items:flex-start;
+    flex-wrap:wrap
+}
+ 
+ /* .col-xl-2 {
+ 	margin-top:0px;
+ } */
+
+
+.col-xl-2 ul li{
+text-decoration: none;
+ color: gray;
+text-align: center;
+list-style: none;
+
+
+}
+
+
+
+
+
+.Top-Trends ul li{
+	text-decoration: none;
+	display: inline-block;
+	border:1px solid #fff;
+	margin-right: 10px;
+	color: gray;
+}
+
+
+.icons2 {
+	text-decoration: none;
+	padding-right: 10px;
+	display: inline-block;
+}
+.Top-Trends li:hover{
+	background-color:#00FF00;
+	color: #FF0000;
+}
+
+.second-footer a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.last a{
+	text-decoration: none;
+	color: #fff;
+}
+
+
+.col-xl-4 ul li{
+ text-decoration: none;
+ display: inline-block;
+ padding-right: 10px;
+}
+.hero2{
+    background-color: 
+#000;
+    border-top:3px solid #03b2e3;
+    color:#fff !important
+}
+.hero2 ul li{
+ text-decoration: none;
+ list-style: none;
+ display: inline-block;
+ 
+ padding-right: 10px;
+ font-weight: 400px;
+
+}
