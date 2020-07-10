@@ -3,7 +3,16 @@
 	src: url("SolaimanLipi-Normal.ttf");
 
 }
-
+@font-face{
+    font-family: "AzadPori";
+    src: url(../../font/AzadPori/Unicode.ttf);
+}
+.margin0{
+    margin: 0;
+}
+.padding0{
+    padding: 0;
+}
 body{
 	margin:0px;
 	padding:0;
@@ -109,7 +118,11 @@ li.dropdown {
 .top-header :hover{
 	border-bottom: none;
 }
-
+.slider-image{
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+}
 
 
 
@@ -174,8 +187,7 @@ li.dropdown {
 	 background-color: #474747;
 	 margin-left: -40px;
 	 position:absolute;
-
-	 height: 280px;
+	 height: 100%;
 }
 
 .barishal button{
@@ -390,6 +402,9 @@ border-bottom: 2px solid #eeeeee;
 .column-news a{
     text-decoration: none;
 }
+.column-category-title a{
+    text-decoration: none;
+}
 
 .column-news-title{
     font-size: 16px;
@@ -408,6 +423,13 @@ border-bottom: 2px solid #eeeeee;
     height: 150px;
     margin-top: 5px;
     margin-bottom: 10px;
+}
+
+.column-news-image-bg-alt{
+    height:50%;
+   object-position: center;
+    object-fit:contain;
+    width: 100%;
 }
 
 .column-news-video{
@@ -459,9 +481,15 @@ border-bottom: 2px solid #eeeeee;
 .row-news a{
     text-decoration: none;
 }
-.row-image{
-   width: 80px;
+.row-image-sm{
+    width: 80px;
     height: 80px;
+    object-fit: cover;
+}
+.row-image{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
 }
 .row-news-bg a{
     text-decoration: none;
@@ -473,6 +501,7 @@ border-bottom: 2px solid #eeeeee;
 .row-image-bg{
     width: 100%;
     height: 175px;
+     object-fit: cover;
 }
 .row-video{
     margin-left: 5px;
@@ -494,13 +523,14 @@ border-bottom: 2px solid #eeeeee;
     text-decoration: none;
 }
 /* Podcast */
+
 .podcast{
     width: 100%;
     font-family: "Open Sans",sans-serif;
     background-color: #000;
     padding: 20px 30px;
     box-sizing: border-box;
-    color: #FFF;
+    color: rgb(104, 95, 95);
     text-align: center;
 }
 .podcast .headlogo {
@@ -515,9 +545,8 @@ border-bottom: 2px solid #eeeeee;
     width: 110px;
 }
 .play{
-    font-size: 14px;
     font-size: 10px;
-    padding: 8px;
+    padding: 10px;
     color: #fff;
     background-color: rgba(255,0,0,0.8);
 }
@@ -526,9 +555,6 @@ border-bottom: 2px solid #eeeeee;
     background-color: rgba(255,255,255,0.8);
     transition-timing-function: ease-in;
     transition-duration: .2s;
-}
-.play:hover{
-
 }
 .single-podcast p a{
     text-decoration: none;
@@ -549,6 +575,84 @@ border-bottom: 2px solid #eeeeee;
 .podcast-item { position: relative; }
 .podcast-item img { display: block; }
 .podcast-item .play { position: absolute; bottom:0; left:0; }
+
+  @media only screen and (max-width: 1200px) {
+    .podcast-image{
+        height: 25%;
+        width: 100%;
+    }
+    .play{
+        font-size: 20px;
+        padding: 20px;
+        color: #fff;
+        background-color: rgba(255,0,0,0.8);
+    }
+    .play:hover{
+        color: red;
+        background-color: rgba(255,255,255,0.8);
+        transition-timing-function: ease-in;
+        transition-duration: .2s;
+    }
+    .play:hover{
+    
+    }
+    .podcast-title p a{
+        font-size: 16px;
+        text-decoration: none;
+        color: #fff;
+    }
+    .podcast-title p a:hover{
+        text-decoration: none;
+        color: red;
+    }
+    .podcast-title p{
+        margin-top: 5px;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-align: center;
+    }
+  }
+  @media only screen and (max-width: 650px) {
+    .podcast-image{
+        height: 150px;
+        width: 150px;
+    }
+    .play{
+        
+        font-size: 15px;
+        padding: 10px;
+        color: #fff;
+        background-color: rgba(255,0,0,0.8);
+    }
+    .play:hover{
+        color: red;
+        background-color: rgba(255,255,255,0.8);
+        transition-timing-function: ease-in;
+        transition-duration: .2s;
+    }
+    .play:hover{
+    
+    }
+    .podcast-title p a{
+        font-size: 16px;
+        text-decoration: none;
+        color: #fff;
+    }
+    .podcast-title p a:hover{
+        text-decoration: none;
+        color: red;
+    }
+    .podcast-title p{
+        margin-top: 5px;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-align: center;
+    }
+  }
 /* Cricket */
 #cricket_section{
     border:#dc3545 solid 2px;
@@ -561,13 +665,106 @@ border-bottom: 2px solid #eeeeee;
     background-color: #dc3545;
 }
 .cricket-nav li{
+    font-size: 12px;
     color: #fff;   
     padding-right: 10px;
     padding-left: 5px;
     border-right: #fff 2px solid;
     display: inline;
     cursor: pointer;
+    -webkit-transition: font-size .1s;
+   transition-timing-function: ease-out;
 }
 .cricket-nav li:hover{
-    color: #3bed63;
+   color: #3bed63;
+   font-size: 14px;
+   -webkit-transition: font-size .2s;
+   transition-timing-function: ease-in;
 }
+.cricket-nav-mobile{
+    text-align: center;
+    list-style: none;
+    padding:5px;
+    background-color: #dc3545;
+}
+.cricket-nav-mobile li{
+    font-size: 10px;
+    color: #fff;   
+    padding-right: 10px;
+    padding-left: 5px;
+    border-right: #fff 2px solid;
+    display: inline;
+    cursor: pointer;
+    -webkit-transition: font-size .1s;
+   transition-timing-function: ease-out;
+}
+
+/* Photo gallery */
+.gallery_desc{
+    
+     background-color: rgba(0, 0, 0, .8);
+	 margin-left: -30px;
+	 position:absolute;
+	 height: 100%;
+}
+.gallery_desc h2{
+    color: #fff;
+    text-align: center;
+}
+.gallery_desc p{
+    text-align: justify;
+    color: #fff;
+}
+.tag{
+    cursor: pointer;
+    padding: 4px;
+    font-size: 12px;
+    border: green 1px solid;
+    text-align: left;
+    color: #fff;
+}
+.tag:hover{
+    color: green;
+    background-color: #fff;
+    border: none;
+}
+.date{
+    font-size: 11px;
+    margin-top: 10px;
+    display: block;
+    color: #fff;
+}
+.caption{
+    font-weight: 400;
+    color: #000;
+    opacity: .5;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Owl */
+
+
+#owl-demo .item{
+    margin: 3px;
+  }
+  #owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  #owl-demo-1 .item{
+    margin: 3px;
+  }
+  #owl-demo-1 .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .aligner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
