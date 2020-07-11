@@ -16,7 +16,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
      
-    var owl = $(".owl-carousel");
+    var owl = $("#owl-carousel");
    
     owl.owlCarousel({
         autoPlay: 3000, //Set AutoPlay to 3 seconds
