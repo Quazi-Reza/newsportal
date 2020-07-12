@@ -135,7 +135,7 @@ li.dropdown {
 	color:blue;
 }
 .container{
-    max-width: 1300px;
+    width: 100%;
 }
 
 
@@ -846,4 +846,9 @@ border-bottom: 2px solid #eeeeee;
     white-space: nowrap;
     text-overflow: ellipsis;
     text-align: center;
+}
+/* footer */
+.footer-logo{
+    height: 50px;
+    width: 150px;
 }
