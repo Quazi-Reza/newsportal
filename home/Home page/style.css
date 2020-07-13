@@ -7,6 +7,10 @@
     font-family: "AzadPori";
     src: url(../../font/AzadPori/Unicode.ttf);
 }
+*{
+    padding: 0px;
+    margin: 0px;
+}
 .margin0{
     margin: 0;
 }
@@ -15,7 +19,7 @@
 }
 body{
 	margin:0px;
-	padding:0;
+	padding:0px;
 	font-family:"myFirstFont";
 	background-color: #fff;
 	font-size:regular;
