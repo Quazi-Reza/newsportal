@@ -487,7 +487,11 @@ border-bottom: 2px solid #eeeeee;
     display: table-cell;
     vertical-align: middle;
 }
+.person-row img{
+    border: #007bff 2px solid;
+}
 .person-row pre{
+    font-size: 12px;
     padding-left: 15px;
 }
 /* Row news */
