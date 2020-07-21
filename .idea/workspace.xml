@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="beef9634-5ca7-4105-95bb-36fdb5b7eab8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/Home page/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/Home page/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/top page/top/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/top page/top/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/top page/top/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/top page/top/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="beef9634-5ca7-4105-95bb-36fdb5b7eab8" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,10 +28,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="121" column="27" selection-start-line="121" selection-start-column="27" selection-end-line="121" selection-end-column="27" />
+            <state relative-caret-position="321">
+              <caret line="120" column="18" lean-forward="true" selection-start-line="120" selection-start-column="18" selection-end-line="120" selection-end-column="18" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" />
+                <element signature="e#1161#5579#0" />
               </folding>
             </state>
           </provider>
@@ -47,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/home/Home page/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="3192">
-              <caret line="152" selection-start-line="152" selection-end-line="152" />
+              <caret line="152" column="1" selection-start-line="152" selection-start-column="1" selection-end-line="152" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -84,40 +79,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="newsportal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newsportal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newsportal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newsportal" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newsportal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newsportal" type="462c0819:PsiDirectoryNode" />
-              <item name="top page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newsportal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newsportal" type="462c0819:PsiDirectoryNode" />
-              <item name="top page" type="462c0819:PsiDirectoryNode" />
-              <item name="top" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="F:/xampp/htdocs/it-theory" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../templated-hielo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -152,15 +121,13 @@
       <workItem from="1594034738602" duration="3000000" />
       <workItem from="1594096597030" duration="7594000" />
       <workItem from="1594221796471" duration="113000" />
-      <workItem from="1594751004106" duration="479000" />
-      <workItem from="1595318592657" duration="315000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11501000" />
+    <option name="totallyTimeSpent" value="10707000" />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -172,7 +139,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1536" height="864" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26308724" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25637585" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -181,7 +148,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" visible="true" weight="0.35449734" />
+      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.32936507" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
@@ -218,13 +185,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/top page/top/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -236,16 +196,17 @@
     <entry file="file://$PROJECT_DIR$/home/Home page/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3192">
-          <caret line="152" selection-start-line="152" selection-end-line="152" />
+          <caret line="152" column="1" selection-start-line="152" selection-start-column="1" selection-end-line="152" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="121" column="27" selection-start-line="121" selection-start-column="27" selection-end-line="121" selection-end-column="27" />
+        <state relative-caret-position="321">
+          <caret line="120" column="18" lean-forward="true" selection-start-line="120" selection-start-column="18" selection-end-line="120" selection-end-column="18" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="e#1161#5579#0" />
           </folding>
         </state>
       </provider>
