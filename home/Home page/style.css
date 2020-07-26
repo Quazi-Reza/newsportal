@@ -775,6 +775,7 @@ border-bottom: 2px solid #eeeeee;
 .gallery_desc h2{
     color: #fff;
     text-align: center;
+    font-size: 26px;
 }
 .gallery_desc p{
     text-align: justify;
