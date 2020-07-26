@@ -411,7 +411,7 @@ border-bottom: 2px solid #eeeeee;
 }
 
 .column-news-title{
-    font-size: 16px;
+    font-size: 14px;
     text-align: left;
     font-weight: 400;
     text-align: justify ;
@@ -500,12 +500,16 @@ border-bottom: 2px solid #eeeeee;
     width: 40px;
     border-radius: 100%;
 }
+
 .row-news{
     margin-top: 10px;
     margin-bottom:10px;
 }
 .row-news a{
     text-decoration: none;
+}
+.row-news h6{
+    font-size: 16px;
 }
 .row-image-sm{
     width: 80px;
@@ -518,8 +522,8 @@ border-bottom: 2px solid #eeeeee;
     object-fit: cover;
 }
 .row-image{
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
 }
 .row-news-bg a{
@@ -527,7 +531,10 @@ border-bottom: 2px solid #eeeeee;
 }
 .row-news-bg a h5{
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 16px;
+}
+.row-news-bg p ,.row-news-bg span a {
+    font-size: 14px;
 }
 .row-image-bg{
     width: 100%;
@@ -570,8 +577,15 @@ border-bottom: 2px solid #eeeeee;
 .media-body a  h5{
     font-size: 18px;
 }
+.media-body a  h6{
+    font-size: 16px;
+}
 .media-body a{
     text-decoration: none;
+}
+
+.opnion-p{
+    font-size: 15px;
 }
 /* Podcast */
 
@@ -849,11 +863,18 @@ border-bottom: 2px solid #eeeeee;
 .column-desk-news{
     margin-bottom: 10px;
 }
+.column-desk-news a h5{
+    text-align: center;
+    padding-bottom: 5px;
+}
 .column-desk-news a h6{
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     text-align: center;
+}
+.column-desk-news p {
+    font-size: 14px;
 }
 /* footer */
 .footer-logo{
