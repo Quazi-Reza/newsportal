@@ -1,1053 +1,766 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
 
-    <link rel="icon" href="../image/bt.png">
-   <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/vertical.news.slider.css">
-    <link rel="stylesheet" href="../css/style2.css">
-    <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="../image/bt.png">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/vertical.news.slider.css">
+  <link rel="stylesheet" href="../css/style2.css">
+  <link rel="stylesheet" href="../../home/Home%20page/style.css">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>পটুয়াখালীতে আরও ৬ জনের শরীরে করোনাভাইরাসের সংক্রমণ শনাক্ত হয়েছে</title>
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>পটুয়াখালীতে আরও ৬ জনের শরীরে করোনাভাইরাসের সংক্রমণ শনাক্ত হয়েছে</title>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="../../css/owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="../../css/owlcarousel/owl.theme.default.min.css">
+  <style>
+  
+  @media only screen and (max-width: 576px) 
+  {
+    #news-heading-title h1{
+        font-size: 24px; /*old 30 px*/
+       
+    }
+    #news-heading-summary p{
+        font-size: 12px;
+        
+    }
+    .tag-black-bg{
+      
+        font-size: 12px;
+       
+    }
+    .date{
+        font-size: 8px;
+    }
+    .profile-image-sm{
+    height: 32px;
+    width: 32px;
+    border-radius: 100%;
+    }
+    .person-row pre{
+        font-size: 8px;
+        line-height: 14px;
+        padding-left: 5px;
+    }
+    
+    
+    .icon-bar a {
+        text-align: center;
+        padding: 8px;
+      font-size: 8px;
+    }
+    #news-desc p{
+        font-size: 12px;
+        text-align: justify;
+    }
+    .subscribe-text{
+        font-size: 12px;
+        color: #fff;
+        text-align: justify;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    input.subscribe-form{
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    
+    .media-board span{
+      font-size: 10px;
+    }
+    .subscribe-button{
+        font-size: 12px;
+        
+    }
+    .row-category-title h5{
+        font-size: 18px;
+    }
+    .tag-black-bg{
+        font-size: 10px;
+    }
+    .row-news-bg a h5{
+        font-size: 14px;
+        text-align: center;
+    }
+   
+    .media-body a h6 {
+        padding-left: 15px;
+        font-size: 14px;
+    }
+
+  }
+  @media only screen and (min-width: 576px) {
+    #news-heading-title h1{
+        font-size: 24px; /*old 30 px*/
+       
+    }
+    #news-heading-summary p{
+        font-size: 12px;
+        
+    }
+    .tag-black-bg{
+      
+        font-size: 12px;
+       
+    }
+    .date{
+        font-size: 8px;
+    }
+    .person-row pre{
+        font-size: 10px;
+        padding-left: 5px;
+    }
+    
+    
+    .icon-bar a {
+        text-align: center;
+        padding: 12px;
+      font-size: 12px;
+    }
+    #news-desc p{
+        font-size: 12px;
+    }
+    .subscribe-text{
+        font-size: 12px;
+        color: #fff;
+        text-align: justify;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    input.subscribe-form{
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    
+    .subscribe-button{
+        font-size: 12px;
+        
+    }
+    .row-category-title h5{
+        font-size: 18px;
+    }
+    .tag-black-bg{
+        font-size: 10px;
+    }
+    .row-news-bg a h5{
+        font-size: 16px;
+        text-align: center;
+    }
+    .media-body a h6 {
+        padding-left: 15px;
+        font-size: 14px;
+    }
+
+  }
+  @media only screen and (min-width: 768px) {
+    #news-heading-title h1{
+        font-size: 26px; /*old 30 px*/
+       
+    }
+    #news-heading-summary p{
+        font-size: 14px;
+        
+    }
+    .tag-black-bg{
+        font-size: 14px; 
+    }
+    .date{
+        font-size: 10px;
+    }
+    .person-row pre{
+        font-size: 10px;
+        padding-left: 5px;
+    }
+    
+    
+    .icon-bar a {
+        text-align: center;
+        padding: 12px;
+      font-size: 14px;
+    }
+    #news-desc p{
+        font-size: 14px;
+    }
+    .subscribe-text{
+        font-size: 14px;
+        color: #fff;
+        text-align: justify;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    input.subscribe-form{
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    
+    .subscribe-button{
+        font-size: 14px;
+        
+    }
+    .row-category-title h5{
+        font-size: 14px;
+    }
+    .row-news-bg a h5{
+        font-size: 16px;
+        text-align: center;
+    }
+    .media-body a h6 {
+        padding-left: 15px;
+        font-size: 16px;
+    }
+
+
+  }
+  @media only screen and (min-width: 992px) {
+    #news-heading-title h1{
+        font-size: 30px; /*old 30 px*/
+       
+    }
+    #news-heading-summary p{
+        font-size: 16px;
+        
+    }
+    .tag-black-bg{
+        font-size: 16px; 
+    }
+    .date{
+        font-size: 12px;
+    }
+    .person-row pre{
+        font-size: 12px;
+        padding-left: 5px;
+    }
+    
+    
+    .icon-bar a {
+        text-align: center;
+        padding: 12px;
+      font-size: 16px;
+    }
+    #news-desc p{
+        font-size: 16px;
+    }
+    .subscribe-text{
+        font-size: 16px;
+        color: #fff;
+        text-align: justify;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    input.subscribe-form{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    
+    .subscribe-button{
+        font-size: 16px;
+        
+    }
+    .row-category-title h5{
+        font-size: 20px;
+    }
+    .row-news-bg a h5{
+        font-size: 16px;
+        text-align: center;
+    }
+    .media-body a h6 {
+        padding-left: 15px;
+        font-size: 14px;
+    }
+
+
+  }
+  @media only screen and (min-width: 1200px) {
+    #news-heading-title h1{
+        font-size: 30px; /*old 30 px*/
+       
+    }
+    #news-heading-summary p{
+        font-size: 16px;
+        
+    }
+    .tag-black-bg{
+        font-size: 16px; 
+    }
+    .date{
+        font-size: 12px;
+    }
+    .person-row pre{
+        font-size: 12px;
+        padding-left: 5px;
+    }
+    
+    
+    .icon-bar a {
+        text-align: center;
+        padding: 12px;
+      font-size: 16px;
+    }
+    #news-desc p{
+        font-size: 16px;
+    }
+    .subscribe-text{
+        font-size: 16px;
+        color: #fff;
+        text-align: justify;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    input.subscribe-form{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    
+    .subscribe-button{
+        font-size: 16px;
+        
+    }
+    .row-category-title h5{
+        font-size: 20px;
+    }
+    .row-news-bg a h5{
+        font-size: 16px;
+        text-align: center;
+    }
+    .media-body a h6 {
+        padding-left: 15px;
+        font-size: 14px;
+    }
+
+  }
+  </style>
 </head>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
 
+<body>
 
-
-    <body>
-    
-
-<!-- ...................................top side start............................................................................. -->
-
-<div class="container" style="max-width: 1300px; border-bottom: 1px solid aqua;">
+  <div class="container border-dark border-bottom mb-5">
     <div class="row">
-        <div class="col-xl-9 col-12">
-         <h1 style="font-weight: bold;">নাসিমা সুলতানা অবশ্য বরিশাল টাইমসকে বলেন,এখন ৫০ শয্যার বেশি যেকোনো হাসপাতালে</h1>   
-         
-        <h6>করোনা ভাইরাসে আক্রান্ত হয়ে পুলিশের আরও দুই সদস্যের মৃত্যু হয়েছে। তাদের একজন ঢাকা মহানগর পুলিশের (ডিএমপি) খিলগাঁও থানার উপপরিদর্শক (এসআই) এস এম মুকুল মিয়া (৫৫), অন্যজন ডিএমপির উত্তরার আজমপুর পুলিশ ফাঁড়ির কনস্টেবল মো. আবুল হোসেন আজাদ (৫৮)।</h6>
-       
-       
-       
-        <p class=" bangladesh" >বাংলাদেশ</p>
-        <pre style="font-size:11px;margin-top:-10px;">Jun 16, 2020 07:23 IST</pre>
-
-         <div class="media">
-            <img src="../image/1.jpg" alt="" align="left">
-    <pre>
-     ইব্রাহীম চৌধুরী, নিউইয়র্ক<br>
-     বরিশাল টাইমস
-     </pre>
-        </div> 
-
-
-        <img src="../image/16.jpg" style="width:100%;border:3px solid aqua;"alt="">
-        <pre>নিউইয়র্ক শহর ঘুরে দাঁড়াচ্ছে। ছবি: রয়টার্স</pre>
-        
-
-<div class="row">
-
-<div class="col-xl-2 col-4">
-            <div class="icon">
-            <ul>  
-            <a href="#"><li class="icons2" style="border:none;"><i class='fab fa-facebook-square' style='font-size:48px;color:blue'></i> </li></a>
-              <a href="#"><li class="icons2" style="border:none;"><i class='fab fa-youtube' style='font-size:48px;color:red'></i></li></a>
-                <a href="#"><li class="icons2" style="border:none;"><i class='fab fa-twitter-square' style="font-size:48px;color: 
-          #9999FF"></i></li></a>
-                <a href="#"><li class="icons2" style="border:none;"><i class='fab fa-linkedin' style="font-size:48px;color: 
-          #9999FF"></i></li></a>
-                <a href="#"><li class="icons2" style="border:none;"><i class='fab fa-instagram' style="font-size:48px;color: 
-          #FF9900;"></i></li></a>
-                
-          
-                 </ul>
-                </div>
-            </div> 
-
-<div class="col-xl-10 col-8">
-  <p>
-
-    প্রধানমন্ত্রী শেখ হাসিনা গণভবন থেকে ভিডিও কনফারেন্সের মাধ্যমে স্পেশাল সিকিউরিটি ফোর্সের (এসএসএফ) প্রতিষ্ঠাবার্ষিকীর অনুষ্ঠানে ভাষণ দেন। ঢাকা, ১৫ জুন। ছবি: পিআইডিপ্রধানমন্ত্রী শেখ হাসিনা গণভবন থেকে ভিডিও কনফারেন্সের মাধ্যমে স্পেশাল সিকিউরিটি ফোর্সের (এসএসএফ) <br> <br> প্রতিষ্ঠাবার্ষিকীর অনুষ্ঠানে ভাষণ দেন। ঢাকা, ১৫ জুন। ছবি: পিআইডিপ্রধানমন্ত্রী শেখ হাসিনা তাঁর প্রতি জনগণকে আস্থা ও বিশ্বাসে অবিচল থাকার আহ্বান জানিয়ে বলেছেন, বাংলাদেশ কোনো কিছুর কাছেই হার মানবে না, এমনকি করোনাভাইরাসের কাছেও নয়। শেখ হাসিনা বলেন, করোনার মতো একটা অদৃশ্য শক্তির কাছে হার মানতে হবে, এটাতো হতে পারে না।
-    
-    প্রধানমন্ত্রী শেখ হাসিনা আজ সোমবার সকালে গণভবন থেকে ভিডিও কনফারেন্সের মাধ্যমে স্পেশাল সিকিউরিটি ফোর্সের (এসএসএফ) ৩৪তম প্রতিষ্ঠাবার্ষিকী উদ্‌যাপন উপলক্ষে আয়োজিত অনুষ্ঠানে দেওয়া ভাষণে এ কথা বলেন। তিনি বলেন, ‘আমরা হার মানব না, মৃত্যু তো হবেই,<br> <br> মৃত্যু যেকোনো সময় যেকোনো কারণে হতে পারে। কিন্তু তার জন্য ভীত হয়ে হার মানতে হবে? এ ধরনের একটা অদৃশ্য শক্তির কাছে, এটা তো হতে পারে না। সে জন্য আমাদেরও সেভাবে প্রচেষ্টা চালাতে হবে।’ তিনি আরও বলেন, ‘আমি চাই আমাদের মানুষের মধ্যে যেন একটা আস্থা থাকে, বিশ্বাস থাকে, সেই বিশ্বাস-আস্থাটা ধরে রাখতে হবে।’
-    
-    দেশ ডিজিটালাইজেশনের সুবাদে ভিডিও কনফারেন্স আয়োজনের কারণে জনসমাগমে না গিয়েও সবার সঙ্গে কুশল বিনিময়ের সুবিধার উল্লেখ করে শেখ হাসিনা বলেন, ‘আজকে ডিজিটাল পদ্ধতি আছে বলে আমি মানুষের কাছে যেতে পারছি, কথা বলতে পারছি এবং বারবার যাচ্ছি।’ <br> <br>দেশবাসীর উদ্দেশে তিনি বলেন, ‘স্বাস্থ্যসুরক্ষার জন্য যা যা নির্দেশনা আছে, সেগুলো মেনে চলে নিজের জীবনকে চালাতে হবে। কারণ, নিজেকে সুরক্ষিত রাখা মানেই অপরকেও সুরক্ষিত রাখা। সেটাও মাথায় রাখতে হবে, সেটা যেন সবাই করেন।’
-    </p>
-    </div>
-<div class="col-12">
-        <h6 style="color: blue; font-weight:bold; padding-top: 20px;"><i class="fa fa-barcode" style="color:  
-            red; "><span style="color: gray;padding-top: 20px; padding-left: 10px;">টপ নিউজ</span></i></h6></div>
- <div class="row">
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</a>
-        </div>
-
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</a>
-        </div>
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</a>
-        </div>
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে। </a>
-        </div>
-    
-
-
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</a>
-        </div>
-
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</a>
-        </div>
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে। </a>
-        </div>
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</a>
-        </div>
-    </div>          
-
-
-
-</div>          
-</div> 
-
-  
-<div class="col-xl-3 col-12">
-    <h6 style="color: blue; font-weight:bold; padding-top: 20px;"><i class="fa fa-barcode" style="color:  
-       #7CFC00; "><span style="color: gray;padding-top: 20px; padding-left: 10px;">টপ নিউজ</span></i></h6>
-            <body class="news-demo">
-
-                 <div class="news-holder cf">
-               <ul class="news-headlines">
-                    <li class="selected">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে</li>
-                    <li>২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে</li>
-                    <li>২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে</li>
-                    <li>২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে</li>
-                    
-                  </ul>
-              
-                  <div class="news-preview">
-              
-                    <div class="news-content top-content">
-                      <img src="http://cdn.impressivewebs.com/news1.jpg">
-                      <p><a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে </a></p>
-              
-                      <p>রধানমন্ত্রী শেখ হাস ভিডিও কনফারেন্সের মাধ্যমে স্পেশাল সিকিউরিটি ফোর্সের (এসএসএফ) প্রতিষ্ঠাবার্ষিকীর অনুষ্ঠানে ভাষণ দেন.</p>
-                    </div><!-- .news-content -->
-              
-                    <div class="news-content">
-                      <img src="http://cdn.impressivewebs.com/news2.jpg">
-                      <p><a href="#">কনফারেন্স আয়োজনের কারণে জনসমাগমে না গিয়েও সবার </a></p>
-              
-                      <p>রধানমন্ত্রী শেখ হাস ভিডিও কনফারেন্সের মাধ্যমে স্পেশাল সিকিউরিটি ফোর্সের (এসএসএফ) প্রতিষ্ঠাবার্ষিকীর অনুষ্ঠানে ভাষণ দেন.</p>
-                    </div><!-- .news-content -->
-              
-                    <div class="news-content">
-                      <img src="http://cdn.impressivewebs.com/news3.jpg">
-                      <p><a href="#">কনফারেন্স আয়োজনের কারণে জনসমাগমে না গিয়েও সবার</a></p>
-              
-                      <p>রধানমন্ত্রী শেখ হাস ভিডিও কনফারেন্সের মাধ্যমে স্পেশাল সিকিউরিটি ফোর্সের (এসএসএফ) প্রতিষ্ঠাবার্ষিকীর অনুষ্ঠানে ভাষণ দেন..</p>
-                    </div><!-- .news-content -->
-              
-                    <div class="news-content">
-                      <img src="http://cdn.impressivewebs.com/news4.jpg">
-                      <p><a href="#">কনফারেন্স আয়োজনের কারণে জনসমাগমে না গিয়েও সবার </a></p>
-              
-                      <p>রধানমন্ত্রী শেখ হাস ভিডিও কনফারেন্সের মাধ্যমে স্পেশাল সিকিউরিটি ফোর্সের (এসএসএফ) প্রতিষ্ঠাবার্ষিকীর অনুষ্ঠানে ভাষণ দেন.</p>
-                    </div><!-- .news-content -->
-              
-                   
-               
-                  </div>
-              
-                </div>
-              
-                
-                
-       
-
-        <h6 style="color: blue; font-weight:bold; padding-top: 20px;"><i class="fa fa-barcode" style="color:  
-            red; "><span style="color: gray;padding-top: 20px; padding-left: 10px;">সর্বশেষ সংবাদ</span></i></h6>
-         <div class="images">
-            <div class ="imag-content"style="margin-top:10px;padding-bottom:20px; ">
-                <img src="../image/21.jpg"style="width: 80px;height: 80px;float: left;" alt="">
-              <a href="#"> <h6>যাত্রী সংকটের কারণে বিমান বাংলাদেশ এয়ারলাইন্সের অভ্যন্তরীণ তিন রুটে। </h6></a>
-              </div> 
-              <div class ="imag-content"style="padding-bottom: 20px;">
-                <img src="../image/21.jpg"style="width: 80px;height: 80px;float: left;" alt="">
-              <a href="#"><h6>করোনার সঙ্গে আম্পানের আঘাতে ফুলচাষি ও ব্যবসায়ীরা বিপর্যস্ত  বিপর্যস্ব্য </h6></a>
-              </div> 
-              
-              <div class ="imag-content"style="padding-bottom: 20px;">
-                <img src="../image/21.jpg"style="width: 80px;height: 80px;float: left;" alt="">
-              <a href="#"><h6>গাইবান্দার সেতু কাজ চলিতেছে  অপ্রয়োজনীয় মালামাল নষ্ট করা যাবে না  </h6></a>
+      <!-- single news -->
+      <div class="col-xl-9 col-md-12 col-lg-12 col-12">
+        <div class="row">
+          <div class="col-xl-12 col-12">
+            <div id="news-heading">
+              <div id="news-heading-title">
+                <h1>নাসিমা সুলতানা অবশ্য বরিশাল টাইমসকে বলেন,এখন ৫০ শয্যার বেশি যেকোনো হাসপাতালে</h1>
               </div>
-              <div style="padding-bottom: 20px;">
-                <img class ="imag-content"src="../image/21.jpg"style="width: 80px;height: 80px;float: left;" alt="">
-              <a href="#"><h6>গাইবান্দার সেতু কাজ চলিতেছে  অপ্রয়োজনীয় মালামাল নষ্ট করা যাবে না </h6></a>
+              <div id="news-heading-summary">
+                <p>করোনা ভাইরাসে আক্রান্ত হয়ে পুলিশের আরও দুই সদস্যের মৃত্যু হয়েছে। তাদের একজন ঢাকা মহানগর পুলিশের
+                  (ডিএমপি) খিলগাঁও থানার উপপরিদর্শক (এসআই) এস এম মুকুল মিয়া (৫৫), অন্যজন ডিএমপির উত্তরার আজমপুর পুলিশ
+                  ফাঁড়ির কনস্টেবল মো. আবুল হোসেন আজাদ (৫৮)।</p>
               </div>
-
-
-         </div>
-
-
-
-
-
-
-    </div> 
-</div>
-</div>
-   
-        
-        
-
-   
-<!--..................................... top side end ............................................................................-->
-
-
-
-
-
-
-
-<!-- ...............................top new start .....................................................................-->
-
-<div class="container" style="max-width: 1300px; border-bottom: 1px solid aqua;">
-    <div class="row">
-        <div class="col-xl-9 col-12">
-         <h1>নাসিমা সুলতানা অবশ্য বরিশাল টাইমসকে বলেন,এখন ৫০ শয্যার বেশি যেকোনো হাসপাতালে</h1>   
-         <h6>করোনা ভাইরাসে আক্রান্ত হয়ে পুলিশের আরও দুই সদস্যের মৃত্যু হয়েছে। তাদের একজন ঢাকা মহানগর পুলিশের (ডিএমপি) খিলগাঁও থানার উপপরিদর্শক (এসআই) এস এম মুকুল মিয়া (৫৫), অন্যজন ডিএমপির উত্তরার আজমপুর পুলিশ ফাঁড়ির কনস্টেবল মো. আবুল হোসেন আজাদ (৫৮)।</h6>
-        
-
-        <p class=" bangladesh" >বাংলাদেশ</p><pre style="font-size:11px;margin-top:-10px;">Jun 16, 2020 07:23 IST</pre>
-
-        <div class="media">
-           <img src="../image/1.jpg"style="border-redius:100%;" alt="" align="left">
-   <pre>
-    ইব্রাহীম চৌধুরী, নিউইয়র্ক<br>
-    বরিশাল টাইমস
-    </pre>
-       </div>  
-
-
-        <img src="../image/16.jpg" style="width:100%;border:3px solid aqua;"alt="">
-        <pre>নিউইয়র্ক শহর ঘুরে দাঁড়াচ্ছে। ছবি: রয়টার্স</pre>
-        
-
-<div class="row">
-
-<div class="col-xl-2 col-4">
-            <!-- <div class="icon">
-            <ul>  
-            <a href="#"><li class="icons2" style="border:none;"><i class='fab fa-facebook-square' style='font-size:48px;color:blue'></i> </li></a>
-                <a href="#"><li class="icons2" style="border:none;"><i class='fab fa-youtube' style='font-size:48px;color:red'></i></li></a>
-                <a href="#"><li class="icons2" style="border:none;"><i class='fab fa-twitter-square' style="font-size:48px;color: 
-          #9999FF"></i></li></a>
-                <a href="#"><li class="icons2" style="border:none;"><i class='fab fa-linkedin' style="font-size:48px;color: 
-          #9999FF"></i></li></a>
-                <a href="#"><li class="icons2" style="border:none;"><i class='fab fa-instagram' style="font-size:48px;color: 
-          #FF9900;"></i></li></a>
-                
-          
-                 </ul>
-                </div> -->
-            </div> 
-
-<div class="col-xl-10 col-8">
-  <p>
-
-    প্রধানমন্ত্রী শেখ হাসিনা গণভবন থেকে ভিডিও কনফারেন্সের মাধ্যমে স্পেশাল সিকিউরিটি ফোর্সের (এসএসএফ) প্রতিষ্ঠাবার্ষিকীর অনুষ্ঠানে ভাষণ দেন। ঢাকা, ১৫ জুন। ছবি: পিআইডিপ্রধানমন্ত্রী শেখ হাসিনা গণভবন থেকে ভিডিও কনফারেন্সের মাধ্যমে স্পেশাল সিকিউরিটি ফোর্সের (এসএসএফ) <br> <br> প্রতিষ্ঠাবার্ষিকীর অনুষ্ঠানে ভাষণ দেন। ঢাকা, ১৫ জুন। ছবি: পিআইডিপ্রধানমন্ত্রী শেখ হাসিনা তাঁর প্রতি জনগণকে আস্থা ও বিশ্বাসে অবিচল থাকার আহ্বান জানিয়ে বলেছেন, বাংলাদেশ কোনো কিছুর কাছেই হার মানবে না, এমনকি করোনাভাইরাসের কাছেও নয়। শেখ হাসিনা বলেন, করোনার মতো একটা অদৃশ্য শক্তির কাছে হার মানতে হবে, এটাতো হতে পারে না।
-    
-    প্রধানমন্ত্রী শেখ হাসিনা আজ সোমবার সকালে গণভবন থেকে ভিডিও কনফারেন্সের মাধ্যমে স্পেশাল সিকিউরিটি ফোর্সের (এসএসএফ) ৩৪তম প্রতিষ্ঠাবার্ষিকী উদ্‌যাপন উপলক্ষে আয়োজিত অনুষ্ঠানে দেওয়া ভাষণে এ কথা বলেন। তিনি বলেন, ‘আমরা হার মানব না, মৃত্যু তো হবেই,<br> <br> মৃত্যু যেকোনো সময় যেকোনো কারণে হতে পারে। কিন্তু তার জন্য ভীত হয়ে হার মানতে হবে? এ ধরনের একটা অদৃশ্য শক্তির কাছে, এটা তো হতে পারে না। সে জন্য আমাদেরও সেভাবে প্রচেষ্টা চালাতে হবে।’ তিনি আরও বলেন, ‘আমি চাই আমাদের মানুষের মধ্যে যেন একটা আস্থা থাকে, বিশ্বাস থাকে, সেই বিশ্বাস-আস্থাটা ধরে রাখতে হবে।’
-    
-    দেশ ডিজিটালাইজেশনের সুবাদে ভিডিও কনফারেন্স আয়োজনের কারণে জনসমাগমে না গিয়েও সবার সঙ্গে কুশল বিনিময়ের সুবিধার উল্লেখ করে শেখ হাসিনা বলেন, ‘আজকে ডিজিটাল পদ্ধতি আছে বলে আমি মানুষের কাছে যেতে পারছি, কথা বলতে পারছি এবং বারবার যাচ্ছি।’ <br> <br>দেশবাসীর উদ্দেশে তিনি বলেন, ‘স্বাস্থ্যসুরক্ষার জন্য যা যা নির্দেশনা আছে, সেগুলো মেনে চলে নিজের জীবনকে চালাতে হবে। কারণ, নিজেকে সুরক্ষিত রাখা মানেই অপরকেও সুরক্ষিত রাখা। সেটাও মাথায় রাখতে হবে, সেটা যেন সবাই করেন।’
-    </p>
-    </div>
-<div class="col-12">
-        <h6 style="color: blue; font-weight:bold; padding-top: 20px;"><i class="fa fa-barcode" style="color:  
-            #7CFC00; "><span style="color: gray;padding-top: 20px; padding-left: 10px;">টপ নিউজ</span></i></h6></div>
- <div class="row">
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</a>
-        </div>
-
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</a>
-        </div>
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</a>
-        </div>
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে। </a>
-        </div>
-    
-
-
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</a>
-        </div>
-
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</a>
-        </div>
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে। </a>
-        </div>
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</a>
-        </div>
-    </div>          
-
-
-
-</div>          
-</div> 
-
-  
-<div class="col-xl-3 col-12">
-  <body><div id="jquery-script-menu">
-    <div class="jquery-script-center">
-    <div class="jquery-script-ads"><script type="text/javascript"><!--
-    google_ad_client = "ca-pub-2783044520727903";
-    /* jQuery_demo */
-    google_ad_slot = "2780937993";
-    google_ad_width = 728;
-    google_ad_height = 90;
-    //-->
-    </script>
-    <script type="text/javascript"
-    src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
-    </script></div>
-    <div class="jquery-script-clear"></div>
-    </div>
-    </div>
-    <div class="container">
-      <h6 style="color: blue; font-weight:bold; padding-top: 20px;"><i class="fa fa-barcode" style="color:  
-      #7CFC00; "><span style="color: gray;padding-top: 20px; padding-left: 10px;">টপ নিউজ</span></i></h6>
-          <div class="slider" style="width: 100%;height: 150px;">
-            <div class="slide-viewer">
-              <div class="slide-group" style="padding-top: 20px;background-color: #eeeeee; height: 150px;">
-                <div class="slide slide-1">
-                  <a href="#">
-                  <img src="https://source.unsplash.com/940x400/?fitness"style="width:100px;height:100px;"alt="slide_01"  align="left"/>
-                  <p>২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</p></a>
+              <div id="news-tag&date">
+                <span class="tag-black-bg">
+                  বাংলাদেশ
+                </span>
+                <pre class="date p-0"> ১.২৫ অপাহরহ্নু, ৬ জুন ২০২০</pre>
+              </div>
+              <div id="news-reporters">
+                <div class="person-row">
+                  <img src="../../profile.jpg" class="profile-image-sm" alt="" align="left">
+                  <pre class="text-dark">কাজী রায়হান রেজা<br>স্টাফ রিপোর্টর</pre>
                 </div>
-                <div class="slide slide-2">
-                  <a href="#">
-                  <img src="https://source.unsplash.com/940x400/?workout"style="width:100px;height:100px; "alt="slide_02" align="left"/>
-                  <p>২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</p></a>
-                </div>
-                <div class="slide slide-3" >  
-                   <a href="#">
-        
-                  <img src="https://source.unsplash.com/940x400/?yoga" style="width:100px;height:100px;"alt="slide_03" align="left"/>
-                  <p>২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</p></a>
-                </div>
-                <div class="slide slide-4">
-                  <a href="#">
-                  <img src="https://source.unsplash.com/940x400/?swimming"style="width:100px;height:100px;" alt="slide_04" align="left"  />
-                  <p>২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</p></a>
+                <div class="person-row">
+                  <img src="../../profile.jpg" class="profile-image-sm" alt="" align="left">
+                  <pre class="text-dark">কাজী রায়হান রেজা<br>স্টাফ রিপোর্টর</pre>
                 </div>
               </div>
             </div>
-            
+            <div id="news-thumbnail">
+              <img src="../image/16.jpg" alt="">
+              <p>স্বেচ্ছাসেবীর উপর ছাড়। এই ব্যথা পরিষেবাগুলি খোলার জন্য একটি ব্যথা এবং এটি ঘৃণা করার জন্য একজন স্থপতি।
+                স্বেচ্ছাসেবীর উপর ছাড়।</p>
+            </div>
           </div>
-
-        <h6 style="color: blue; font-weight:bold; padding-top: 20px;"><i class="fa fa-barcode" style="color:  
-            red; "><span style="color: gray;padding-top: 20px; padding-left: 10px;">সর্বশেষ সংবাদ</span></i></h6>
-         <div class="images">
-            <div class ="imag-content"style="margin-top:10px;padding-bottom:20px; ">
-                <img src="../image/21.jpg"style="width: 80px;height: 80px;float: left;" alt="">
-              <a href="#"> <h6>যাত্রী সংকটের কারণে বিমান বাংলাদেশ এয়ারলাইন্সের অভ্যন্তরীণ তিন রুটে। </h6></a>
-              </div> 
-              <div class ="imag-content"style="padding-bottom: 20px;">
-                <img src="../image/21.jpg"style="width: 80px;height: 80px;float: left;" alt="">
-              <a href="#"><h6>করোনার সঙ্গে আম্পানের আঘাতে ফুলচাষি ও ব্যবসায়ীরা বিপর্যস্ত  বিপর্যস্ব্য </h6></a>
-              </div> 
-              
-              <div class ="imag-content"style="padding-bottom: 20px;">
-                <img src="../image/21.jpg"style="width: 80px;height: 80px;float: left;" alt="">
-              <a href="#"><h6>গাইবান্দার সেতু কাজ চলিতেছে  অপ্রয়োজনীয় মালামাল নষ্ট করা যাবে না  </h6></a>
-              </div>
-              <div style="padding-bottom: 20px;">
-                <img class ="imag-content"src="../image/21.jpg"style="width: 80px;height: 80px;float: left;" alt="">
-              <a href="#"><h6>গাইবান্দার সেতু কাজ চলিতেছে  অপ্রয়োজনীয় মালামাল নষ্ট করা যাবে না </h6></a>
-              </div>
-
-
-         </div>
-
-
-
-
-
-
-    </div> 
-</div>
-</div>
-<!-- ...............................third contaent .........................-->
-
-
-<div class="container" style="max-width: 1300px; border-bottom: 1px solid aqua;">
-    <div class="row">
-        <div class="col-xl-9 col-12">
-         <h1>নাসিমা সুলতানা অবশ্য বরিশাল টাইমসকে বলেন,এখন ৫০ শয্যার বেশি যেকোনো হাসপাতালে</h1>   
-         <h6>করোনা ভাইরাসে আক্রান্ত হয়ে পুলিশের আরও দুই সদস্যের মৃত্যু হয়েছে। তাদের একজন ঢাকা মহানগর পুলিশের (ডিএমপি) খিলগাঁও থানার উপপরিদর্শক (এসআই) এস এম মুকুল মিয়া (৫৫), অন্যজন ডিএমপির উত্তরার আজমপুর পুলিশ ফাঁড়ির কনস্টেবল মো. আবুল হোসেন আজাদ (৫৮)।</h6>
-
-
-        <p class=" bangladesh" >বাংলাদেশ</p><pre style="font-size:11px;margin-top:-10px;">Jun 16, 2020 07:23 IST</pre>
-
-        <div class="media">
-           <img src="../image/1.jpg"style="border-redius:100%;" alt="" align="left">
-   <pre>
-    ইব্রাহীম চৌধুরী, নিউইয়র্ক<br>
-    বরিশাল টাইমস
-    </pre>
-       </div> 
-
-
-        <img src="../image/16.jpg" style="width:100%;border:3px solid aqua;"alt="">
-        <pre>নিউইয়র্ক শহর ঘুরে দাঁড়াচ্ছে। ছবি: রয়টার্স</pre>
-        
-
-<div class="row">
-
-<div class="col-xl-2 col-4">
-            <!-- <div class="icon">
-            <ul>  
-            <a href="#"><li class="icons2" style="border:none;"><i class='fab fa-facebook-square' style='font-size:48px;color:blue'></i> </li></a>
-                <a href="#"><li class="icons2" style="border:none;"><i class='fab fa-youtube' style='font-size:48px;color:red'></i></li></a>
-                <a href="#"><li class="icons2" style="border:none;"><i class='fab fa-twitter-square' style="font-size:48px;color: 
-          #9999FF"></i></li></a>
-                <a href="#"><li class="icons2" style="border:none;"><i class='fab fa-linkedin' style="font-size:48px;color: 
-          #9999FF"></i></li></a>
-                <a href="#"><li class="icons2" style="border:none;"><i class='fab fa-instagram' style="font-size:48px;color: 
-          #FF9900;"></i></li></a>
-                
-          
-                 </ul>
-                </div> -->
-            </div> 
-
-<div class=" col-xl-10 col-8">
-  <p>
-
-    প্রধানমন্ত্রী শেখ হাসিনা গণভবন থেকে ভিডিও কনফারেন্সের মাধ্যমে স্পেশাল সিকিউরিটি ফোর্সের (এসএসএফ) প্রতিষ্ঠাবার্ষিকীর অনুষ্ঠানে ভাষণ দেন। ঢাকা, ১৫ জুন। ছবি: পিআইডিপ্রধানমন্ত্রী শেখ হাসিনা গণভবন থেকে ভিডিও কনফারেন্সের মাধ্যমে স্পেশাল সিকিউরিটি ফোর্সের (এসএসএফ) <br> <br> প্রতিষ্ঠাবার্ষিকীর অনুষ্ঠানে ভাষণ দেন। ঢাকা, ১৫ জুন। ছবি: পিআইডিপ্রধানমন্ত্রী শেখ হাসিনা তাঁর প্রতি জনগণকে আস্থা ও বিশ্বাসে অবিচল থাকার আহ্বান জানিয়ে বলেছেন, বাংলাদেশ কোনো কিছুর কাছেই হার মানবে না, এমনকি করোনাভাইরাসের কাছেও নয়। শেখ হাসিনা বলেন, করোনার মতো একটা অদৃশ্য শক্তির কাছে হার মানতে হবে, এটাতো হতে পারে না।
-    
-    প্রধানমন্ত্রী শেখ হাসিনা আজ সোমবার সকালে গণভবন থেকে ভিডিও কনফারেন্সের মাধ্যমে স্পেশাল সিকিউরিটি ফোর্সের (এসএসএফ) ৩৪তম প্রতিষ্ঠাবার্ষিকী উদ্‌যাপন উপলক্ষে আয়োজিত অনুষ্ঠানে দেওয়া ভাষণে এ কথা বলেন। তিনি বলেন, ‘আমরা হার মানব না, মৃত্যু তো হবেই,<br> <br> মৃত্যু যেকোনো সময় যেকোনো কারণে হতে পারে। কিন্তু তার জন্য ভীত হয়ে হার মানতে হবে? এ ধরনের একটা অদৃশ্য শক্তির কাছে, এটা তো হতে পারে না। সে জন্য আমাদেরও সেভাবে প্রচেষ্টা চালাতে হবে।’ তিনি আরও বলেন, ‘আমি চাই আমাদের মানুষের মধ্যে যেন একটা আস্থা থাকে, বিশ্বাস থাকে, সেই বিশ্বাস-আস্থাটা ধরে রাখতে হবে।’
-    
-    দেশ ডিজিটালাইজেশনের সুবাদে ভিডিও কনফারেন্স আয়োজনের কারণে জনসমাগমে না গিয়েও সবার সঙ্গে কুশল বিনিময়ের সুবিধার উল্লেখ করে শেখ হাসিনা বলেন, ‘আজকে ডিজিটাল পদ্ধতি আছে বলে আমি মানুষের কাছে যেতে পারছি, কথা বলতে পারছি এবং বারবার যাচ্ছি।’ <br> <br>দেশবাসীর উদ্দেশে তিনি বলেন, ‘স্বাস্থ্যসুরক্ষার জন্য যা যা নির্দেশনা আছে, সেগুলো মেনে চলে নিজের জীবনকে চালাতে হবে। কারণ, নিজেকে সুরক্ষিত রাখা মানেই অপরকেও সুরক্ষিত রাখা। সেটাও মাথায় রাখতে হবে, সেটা যেন সবাই করেন।’
-    </p>
-    </div>
-<div class="col-12">
-        <h6 style="color: blue; font-weight:bold; padding-top: 20px;"><i class="fa fa-barcode" style="color:  
-            red; "><span style="color: gray;padding-top: 20px; padding-left: 10px;">টপ নিউজ</span></i></h6></div>
- <div class="row">
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</a>
-        </div>
-
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</a>
-        </div>
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</a>
-        </div>
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে। </a>
-        </div>
-    
-
-
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</a>
-        </div>
-
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</a>
-        </div>
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে। </a>
-        </div>
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</a>
-        </div>
-    </div>          
-
-
-
-</div>          
-</div> 
-
-  
-<div class="col-xl-3 col-12">
-    
-        <body><div id="jquery-script-menu">
-          <div class="jquery-script-center">
-          <div class="jquery-script-ads"><script type="text/javascript"><!--
-          google_ad_client = "ca-pub-2783044520727903";
-          /* jQuery_demo */
-          google_ad_slot = "2780937993";
-          google_ad_width = 728;
-          google_ad_height = 90;
-          //-->
-          </script>
-          <script type="text/javascript"
-          src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
-          </script></div>
-          <div class="jquery-script-clear"></div>
-          </div>
-          </div>
-          <div class="container">
-            <h6 style="color: blue; font-weight:bold; padding-top: 20px;"><i class="fa fa-barcode" style="color:  
-             #7CFC00; "><span style="color: gray;padding-top: 20px; padding-left: 10px;">টপ নিউজ</span></i></h6>
-                <div class="slider" style="width: 100%;height: 150px;">
-                  <div class="slide-viewer">
-                    <div class="slide-group" style="padding-top: 20px;background-color: #eeeeee; height: 150px;">
-                      <div class="slide slide-1">
-                        <a href="#">
-                        <img src="https://source.unsplash.com/940x400/?fitness"style="width:100px;height:100px;"alt="slide_01"  align="left"/>
-                        <p>২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</p></a>
-                      </div>
-                      <div class="slide slide-2">
-                        <a href="#">
-                        <img src="https://source.unsplash.com/940x400/?workout"style="width:100px;height:100px; "alt="slide_02" align="left"/>
-                        <p>২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</p></a>
-                      </div>
-                      <div class="slide slide-3" >  
-                         <a href="#">
-              
-                        <img src="https://source.unsplash.com/940x400/?yoga" style="width:100px;height:100px;"alt="slide_03" align="left"/>
-                        <p>২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</p></a>
-                      </div>
-                      <div class="slide slide-4">
-                        <a href="#">
-                        <img src="https://source.unsplash.com/940x400/?swimming"style="width:100px;height:100px;" alt="slide_04" align="left"  />
-                        <p>২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</p></a>
-                      </div>
-                    </div>
-                  </div>
-                  
-                </div>
-
-        <h6 style="color: blue; font-weight:bold; padding-top: 20px;"><i class="fa fa-barcode" style="color:  
-            red; "><span style="color: gray;padding-top: 20px; padding-left: 10px;">সর্বশেষ সংবাদ</span></i></h6>
-         <div class="images">
-            <div class ="imag-content"style="margin-top:10px;padding-bottom:20px; ">
-                <img src="../image/21.jpg"style="width: 80px;height: 80px;float: left;" alt="">
-              <a href="#"> <h6>যাত্রী সংকটের কারণে বিমান বাংলাদেশ এয়ারলাইন্সের অভ্যন্তরীণ তিন রুটে। </h6></a>
-              </div> 
-              <div class ="imag-content"style="padding-bottom: 20px;">
-                <img src="../image/21.jpg"style="width: 80px;height: 80px;float: left;" alt="">
-              <a href="#"><h6>করোনার সঙ্গে আম্পানের আঘাতে ফুলচাষি ও ব্যবসায়ীরা বিপর্যস্ত  বিপর্যস্ব্য </h6></a>
-              </div> 
-              
-              <div class ="imag-content"style="padding-bottom: 20px;">
-                <img src="../image/21.jpg"style="width: 80px;height: 80px;float: left;" alt="">
-              <a href="#"><h6>গাইবান্দার সেতু কাজ চলিতেছে  অপ্রয়োজনীয় মালামাল নষ্ট করা যাবে না  </h6></a>
-              </div>
-              <div style="padding-bottom: 20px;">
-                <img class ="imag-content"src="../image/21.jpg"style="width: 80px;height: 80px;float: left;" alt="">
-              <a href="#"><h6>গাইবান্দার সেতু কাজ চলিতেছে  অপ্রয়োজনীয় মালামাল নষ্ট করা যাবে না </h6></a>
-              </div>
-
-
-         </div>
-
-
-
-
-
-
-    </div> 
-</div>
-</div>
-
-
-
-
-
-<!-- ........................................forth content........................................ -->
-
-
-<div class="container" style="max-width: 1300px; border-bottom: 1px solid aqua;">
-    <div class="row">
-        <div class="col-xl-9 col-12">
-         <h1>নাসিমা সুলতানা অবশ্য বরিশাল টাইমসকে বলেন,এখন ৫০ শয্যার বেশি যেকোনো হাসপাতালে</h1>   
-         <h6>করোনা ভাইরাসে আক্রান্ত হয়ে পুলিশের আরও দুই সদস্যের মৃত্যু হয়েছে। তাদের একজন ঢাকা মহানগর পুলিশের (ডিএমপি) খিলগাঁও থানার উপপরিদর্শক (এসআই) এস এম মুকুল মিয়া (৫৫), অন্যজন ডিএমপির উত্তরার আজমপুর পুলিশ ফাঁড়ির কনস্টেবল মো. আবুল হোসেন আজাদ (৫৮)।</h6>
-     
-
-        <p class=" bangladesh" >বাংলাদেশ</p><pre style="font-size:11px;margin-top:-10px;">Jun 16, 2020 07:23 IST</pre>
-
-        <div class="media">
-           <img src="../image/1.jpg"style="border-redius:100%;" alt="" align="left">
-   <pre>
-    ইব্রাহীম চৌধুরী, নিউইয়র্ক<br>
-    বরিশাল টাইমস
-    </pre>
-       </div> 
-
-        <img src="../image/16.jpg" style="width:100%;border:3px solid aqua;"alt="">
-        <pre>নিউইয়র্ক শহর ঘুরে দাঁড়াচ্ছে। ছবি: রয়টার্স</pre>
-        
-
-<div class="row">
-
-<div class="col-xl-2 col-4-d-none">
-            <div class="icon">
-            <ul>  
-            <a href="#"><li class="icons2" style="border:none;"><i class='fab fa-facebook-square' style='font-size:48px;color:blue'></i> </li></a>
-                <a href="#"><li class="icons2" style="border:none;"><i class='fab fa-youtube' style='font-size:48px;color:red'></i></li></a>
-                <a href="#"><li class="icons2" style="border:none;"><i class='fab fa-twitter-square' style="font-size:48px;color: 
-          #9999FF"></i></li></a>
-                <a href="#"><li class="icons2" style="border:none;"><i class='fab fa-linkedin' style="font-size:48px;color: 
-          #9999FF"></i></li></a>
-                <a href="#"><li class="icons2" style="border:none;"><i class='fab fa-instagram' style="font-size:48px;color: 
-          #FF9900;"></i></li></a>
-                
-          
-                 </ul>
-                </div>
-            </div> 
-
-<div class="col-xl-10 col-12">
-    <p>
-
-        প্রধানমন্ত্রী শেখ হাসিনা গণভবন থেকে ভিডিও কনফারেন্সের মাধ্যমে স্পেশাল সিকিউরিটি ফোর্সের (এসএসএফ) প্রতিষ্ঠাবার্ষিকীর অনুষ্ঠানে ভাষণ দেন। ঢাকা, ১৫ জুন। ছবি: পিআইডিপ্রধানমন্ত্রী শেখ হাসিনা গণভবন থেকে ভিডিও কনফারেন্সের মাধ্যমে স্পেশাল সিকিউরিটি ফোর্সের (এসএসএফ) <br> <br> প্রতিষ্ঠাবার্ষিকীর অনুষ্ঠানে ভাষণ দেন। ঢাকা, ১৫ জুন। ছবি: পিআইডিপ্রধানমন্ত্রী শেখ হাসিনা তাঁর প্রতি জনগণকে আস্থা ও বিশ্বাসে অবিচল থাকার আহ্বান জানিয়ে বলেছেন, বাংলাদেশ কোনো কিছুর কাছেই হার মানবে না, এমনকি করোনাভাইরাসের কাছেও নয়। শেখ হাসিনা বলেন, করোনার মতো একটা অদৃশ্য শক্তির কাছে হার মানতে হবে, এটাতো হতে পারে না।
-        
-        প্রধানমন্ত্রী শেখ হাসিনা আজ সোমবার সকালে গণভবন থেকে ভিডিও কনফারেন্সের মাধ্যমে স্পেশাল সিকিউরিটি ফোর্সের (এসএসএফ) ৩৪তম প্রতিষ্ঠাবার্ষিকী উদ্‌যাপন উপলক্ষে আয়োজিত অনুষ্ঠানে দেওয়া ভাষণে এ কথা বলেন। তিনি বলেন, ‘আমরা হার মানব না, মৃত্যু তো হবেই,<br> <br> মৃত্যু যেকোনো সময় যেকোনো কারণে হতে পারে। কিন্তু তার জন্য ভীত হয়ে হার মানতে হবে? এ ধরনের একটা অদৃশ্য শক্তির কাছে, এটা তো হতে পারে না। সে জন্য আমাদেরও সেভাবে প্রচেষ্টা চালাতে হবে।’ তিনি আরও বলেন, ‘আমি চাই আমাদের মানুষের মধ্যে যেন একটা আস্থা থাকে, বিশ্বাস থাকে, সেই বিশ্বাস-আস্থাটা ধরে রাখতে হবে।’
-        
-        দেশ ডিজিটালাইজেশনের সুবাদে ভিডিও কনফারেন্স আয়োজনের কারণে জনসমাগমে না গিয়েও সবার সঙ্গে কুশল বিনিময়ের সুবিধার উল্লেখ করে শেখ হাসিনা বলেন, ‘আজকে ডিজিটাল পদ্ধতি আছে বলে আমি মানুষের কাছে যেতে পারছি, কথা বলতে পারছি এবং বারবার যাচ্ছি।’ <br> <br>দেশবাসীর উদ্দেশে তিনি বলেন, ‘স্বাস্থ্যসুরক্ষার জন্য যা যা নির্দেশনা আছে, সেগুলো মেনে চলে নিজের জীবনকে চালাতে হবে। কারণ, নিজেকে সুরক্ষিত রাখা মানেই অপরকেও সুরক্ষিত রাখা। সেটাও মাথায় রাখতে হবে, সেটা যেন সবাই করেন।’
-        </p>
-    </div>
-<div class="col-12">
-        <h6 style="color: blue; font-weight:bold; padding-top: 20px;"><i class="fa fa-barcode" style="color:  
-           #7CFC00; "><span style="color: gray;padding-top: 20px; padding-left: 10px;">টপ নিউজ</span></i></h6></div>
- <div class="row">
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</a>
-        </div>
-
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</a>
-        </div>
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</a>
-        </div>
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে। </a>
-        </div>
-    
-
-
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</a>
-        </div>
-
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</a>
-        </div>
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে। </a>
-        </div>
-        <div class="col-xl-3 col-6">
-            <img src="../image/3.jpg"style="width:100%" alt="">
-            <a href="#">২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</a>
-        </div>
-    </div>          
-
-
-
-</div>          
-</div> 
-
-  
-<div class="col-xl-3 col-12">
-    <body><div id="jquery-script-menu">
-        <div class="jquery-script-center">
-        <div class="jquery-script-ads"><script type="text/javascript"><!--
-        google_ad_client = "ca-pub-2783044520727903";
-        /* jQuery_demo */
-        google_ad_slot = "2780937993";
-        google_ad_width = 728;
-        google_ad_height = 90;
-        //-->
-        </script>
-        <script type="text/javascript"
-        src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
-        </script></div>
-        <div class="jquery-script-clear"></div>
-        </div>
         </div>
         <div class="container">
-          <h6 style="color: blue; font-weight:bold; padding-top: 20px;"><i class="fa fa-barcode" style="color:  
-            #7CFC00; "><span style="color: gray;padding-top: 20px; padding-left: 10px;">টপ নিউজ</span></i></h6>
-              <div class="slider" style="width: 100%;height: 150px;">
-                <div class="slide-viewer">
-                  <div class="slide-group" style="padding-top: 20px;background-color: #eeeeee; height: 150px;">
-                    <div class="slide slide-1">
-                      <a href="#">
-                      <img src="https://source.unsplash.com/940x400/?fitness"style="width:100px;height:100px;"alt="slide_01"  align="left"/>
-                      <p>২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</p></a>
-                    </div>
-                    <div class="slide slide-2">
-                      <a href="#">
-                      <img src="https://source.unsplash.com/940x400/?workout"style="width:100px;height:100px; "alt="slide_02" align="left"/>
-                      <p>২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</p></a>
-                    </div>
-                    <div class="slide slide-3" >  
-                       <a href="#">
-            
-                      <img src="https://source.unsplash.com/940x400/?yoga" style="width:100px;height:100px;"alt="slide_03" align="left"/>
-                      <p>২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</p></a>
-                    </div>
-                    <div class="slide slide-4">
-                      <a href="#">
-                      <img src="https://source.unsplash.com/940x400/?swimming"style="width:100px;height:100px;" alt="slide_04" align="left"  />
-                      <p>২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</p></a>
-                    </div>
-                  </div>
-                </div>
-                <!-- <div class="slide-buttons"></div> -->
+          <div class="row">
+            <div class="col-2 col-md-2 col-lg-2 col-xl-1">
+              <div class="icon-bar">
+                <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="google"><i class="fab fa-google"></i></a>
+                <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
               </div>
-
-
-
-
-
-              <h6 style="color: blue; font-weight:bold; padding-top: 20px;"><i class="fa fa-barcode" style="color:  
-               #FFFF00"><span style="color: gray;padding-top: 20px; padding-left: 10px;">সর্বশেষ সংবাদ</span></i></h6>
-             <div class="images">
-                <div class ="imag-content"style="margin-top:10px;padding-bottom:20px; ">
-                    <img src="../image/21.jpg"style="width: 80px;height: 80px;float: left;" alt="">
-                  <a href="#"> <h6>যাত্রী সংকটের কারণে বিমান বাংলাদেশ এয়ারলাইন্সের অভ্যন্তরীণ তিন রুটে। </h6></a>
-                  </div> 
-                  <div class ="imag-content"style="padding-bottom: 20px;">
-                    <img src="../image/21.jpg"style="width: 80px;height: 80px;float: left;" alt="">
-                  <a href="#"><h6>করোনার সঙ্গে আম্পানের আঘাতে ফুলচাষি ও ব্যবসায়ীরা বিপর্যস্ত  বিপর্যস্ব্য </h6></a>
-                  </div> 
-                  
-                  <div class ="imag-content"style="padding-bottom: 20px;">
-                    <img src="../image/21.jpg"style="width: 80px;height: 80px;float: left;" alt="">
-                  <a href="#"><h6>গাইবান্দার সেতু কাজ চলিতেছে  অপ্রয়োজনীয় মালামাল নষ্ট করা যাবে না  </h6></a>
-                  </div>
-                  <div style="padding-bottom: 20px;">
-                    <img class ="imag-content"src="../image/21.jpg"style="width: 80px;height: 80px;float: left;" alt="">
-                  <a href="#"><h6>গাইবান্দার সেতু কাজ চলিতেছে  অপ্রয়োজনীয় মালামাল নষ্ট করা যাবে না </h6></a>
-                  </div>
-               </div>
- <!-- ...............................slider................................................... -->
-
-               <body><div id="jquery-script-menu">
-                <div class="jquery-script-center">
-                <div class="jquery-script-ads"><script type="text/javascript"><!--
-                google_ad_client = "ca-pub-2783044520727903";
-                /* jQuery_demo */
-                google_ad_slot = "2780937993";
-                google_ad_width = 728;
-                google_ad_height = 90;
-                //-->
-                </script>
-                <script type="text/javascript"
-                src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
-                </script></div>
-                <div class="jquery-script-clear"></div>
-                </div>
-                </div>
-                <div class="container" style="max-width: 1300px;">
-                  <h6 style="color: blue; font-weight:bold; padding-top: 20px;"><i class="fa fa-barcode" style="color:  
-                    red; "><span style="color: gray;padding-top: 20px; padding-left: 10px;">বাংলাদেশ সংবাদ</span></i></h6>
-                      <div class="slider" style="width: 100%;height: 150px;">
-                        <div class="slide-viewer" style="padding-top: 20px;background-color: #eeeeee; height: 150px;">
-                          <div class="slide-group">
-                            <div class="slide slide-1">
-                              <a href="#">
-                              <img src="https://source.unsplash.com/940x400/?fitness"style="width:100px;height:100px;"alt="slide_01"  align="left"/>
-                              <p>২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</p></a>
-                            </div>
-                            <div class="slide slide-2">
-                              <a href="#">
-                              <img src="https://source.unsplash.com/940x400/?workout"style="width:100px;height:100px; "alt="slide_02" align="left"/>
-                              <p>২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</p></a>
-                            </div>
-                            <div class="slide slide-3" >  
-                               <a href="#">
-                    
-                              <img src="https://source.unsplash.com/940x400/?yoga" style="width:100px;height:100px;"alt="slide_03" align="left"/>
-                              <p>২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</p></a>
-                            </div>
-                            <div class="slide slide-4">
-                              <a href="#">
-                              <img src="https://source.unsplash.com/940x400/?swimming"style="width:100px;height:100px;" alt="slide_04" align="left"  />
-                              <p>২৫ মার্চ থেকে নিউইয়র্ক শহরে মৃত্যুর সংখ্যা দ্রুত বাড়তে থাকে।</p></a>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- <div class="slide-buttons"></div>  -->
+            </div>
+            <div class="col-xl-11 col-10 col-md-10 col-lg-10">
+              <div id="news-desc">
+                <p>
+                  প্রধানমন্ত্রী শেখ হাসিনা গণভবন থেকে ভিডিও কনফারেন্সের মাধ্যমে স্পেশাল সিকিউরিটি ফোর্সের (এসএসএফ)
+                  প্রতিষ্ঠাবার্ষিকীর অনুষ্ঠানে ভাষণ দেন। ঢাকা, ১৫ জুন। ছবি: পিআইডিপ্রধানমন্ত্রী শেখ হাসিনা গণভবন থেকে
+                  ভিডিও কনফারেন্সের মাধ্যমে স্পেশাল সিকিউরিটি ফোর্সের (এসএসএফ) <br> <br> প্রতিষ্ঠাবার্ষিকীর অনুষ্ঠানে ভাষণ
+                  দেন। ঢাকা, ১৫ জুন। ছবি: পিআইডিপ্রধানমন্ত্রী শেখ হাসিনা তাঁর প্রতি জনগণকে আস্থা ও বিশ্বাসে অবিচল থাকার
+                  আহ্বান জানিয়ে বলেছেন, বাংলাদেশ কোনো কিছুর কাছেই হার মানবে না, এমনকি করোনাভাইরাসের কাছেও নয়। শেখ হাসিনা
+                  বলেন, করোনার মতো একটা অদৃশ্য শক্তির কাছে হার মানতে হবে, এটাতো হতে পারে না।
+                  প্রধানমন্ত্রী শেখ হাসিনা গণভবন থেকে ভিডিও কনফারেন্সের মাধ্যমে স্পেশাল সিকিউরিটি ফোর্সের (এসএসএফ)
+                  প্রতিষ্ঠাবার্ষিকীর অনুষ্ঠানে ভাষণ দেন। ঢাকা, ১৫ জুন। ছবি: পিআইডিপ্রধানমন্ত্রী শেখ হাসিনা গণভবন থেকে
+                  ভিডিও কনফারেন্সের মাধ্যমে স্পেশাল সিকিউরিটি ফোর্সের (এসএসএফ) <br> <br> প্রতিষ্ঠাবার্ষিকীর অনুষ্ঠানে ভাষণ
+                  দেন। ঢাকা, ১৫ জুন। ছবি: পিআইডিপ্রধানমন্ত্রী শেখ হাসিনা তাঁর প্রতি জনগণকে আস্থা ও বিশ্বাসে অবিচল থাকার
+                  আহ্বান জানিয়ে বলেছেন, বাংলাদেশ কোনো কিছুর কাছেই হার মানবে না, এমনকি করোনাভাইরাসের কাছেও নয়। শেখ হাসিনা
+                  বলেন, করোনার মতো একটা অদৃশ্য শক্তির কাছে হার মানতে হবে, এটাতো হতে পারে না।
+                   প্রধানমন্ত্রী শেখ হাসিনা গণভবন থেকে ভিডিও কনফারেন্সের মাধ্যমে স্পেশাল সিকিউরিটি ফোর্সের (এসএসএফ)
+                  প্রতিষ্ঠাবার্ষিকীর অনুষ্ঠানে ভাষণ দেন। ঢাকা, ১৫ জুন। ছবি: পিআইডিপ্রধানমন্ত্রী শেখ হাসিনা গণভবন থেকে
+                  ভিডিও কনফারেন্সের মাধ্যমে স্পেশাল সিকিউরিটি ফোর্সের (এসএসএফ) <br> <br> প্রতিষ্ঠাবার্ষিকীর অনুষ্ঠানে ভাষণ
+                  দেন। ঢাকা, ১৫ জুন। ছবি: পিআইডিপ্রধানমন্ত্রী শেখ হাসিনা তাঁর প্রতি জনগণকে আস্থা ও বিশ্বাসে অবিচল থাকার
+                  আহ্বান জানিয়ে বলেছেন, বাংলাদেশ কোনো কিছুর কাছেই হার মানবে না, এমনকি করোনাভাইরাসের কাছেও নয়। শেখ হাসিনা
+                  বলেন, করোনার মতো একটা অদৃশ্য শক্তির কাছে হার মানতে হবে, এটাতো হতে পারে না।
+                  </p>
+               
+              </div>
+  
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-xl-12 col-12">
+              <form action="" class="subscribe-form">
+                <div class="content bg-secondary border-radius">
+                  <div class="form-row p-5">
+                    <div class="col-md-6 col-lg-6 col-xl-6 col-12">
+                      <div class="subscribe-text"> 
+                         প্রতিদিনের নিউজলেটার পেতে ইনবক্সে আপনার ইমেল প্রদান করুন
                       </div>
-    
-    
-        
-            <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
-            <script src="js/index.js"></script>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xl-4 col-12">
+                      <input class="form-control subscribe-form" name="emailAdd" placeholder="আপনার ইমেল প্রদান করুন" type="email" required="required">
+                    </div>
+                    <div class="col-md-2 col-xl-2 col-lg-2 col-12">
+                      <button class="btn btn-primary btn-block subscribe-button">
+                        সাবস্ক্রাইব
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            
+          </div>
+          <div class="row mb-5">
+            <div class="col-xl-12 col-12">
+              <div class="row-category-title">
+                <h5>
+                  <i class="fa fa-barcode text-success"></i>
+                  <span class="text-secondary">
+                    ট্যাগ
+                  </span>
+                </h5>
+              </div>
+              <div class="media-board p-1">
+                <span class="tag-black-bg border-radius">Lorem, ipsum.</span> <span class="tag-black-bg border-radius">Lorem, ipsum.</span> <span class="tag-black-bg border-radius">Lorem, ipsum.</span> <span class="tag-black-bg border-radius">Lorem, ipsum.</span> <span class="tag-black-bg border-radius">Lorem, ipsum.</span> <span class="tag-black-bg border-radius">Lorem, ipsum.</span> <span class="tag-black-bg border-radius">Lorem, ipsum.</span> <span class="tag-black-bg border-radius">Lorem, ipsum.</span>
+                <span class="tag-black-bg border-radius">Lorem, ipsum.</span> <span class="tag-black-bg border-radius">Lorem ipsum dolor sit amet.</span>
+               
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5">
+              <!-- Row category title -->
+              <div class="col-xl-12 col-12">
+                <div class="row-category-title">
+                  <h5>
+                      <i class="fa fa-barcode text-success" aria-hidden="true"></i>
+                      <span class="text-secondary">
+                          বিশেষ গল্প
+                      </span>
+                  </h5>
+              </div>
+              <!-- End of row category -->
+              <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                      <div class="row-news-bg">
+                          <img src="../../home/img/7.jpg" class="row-image-bg">
+                          <a href="top%20page/top/index.html">
+                              <h5>
+                                সবার ওপরে রোনালদো, দুইয়ে মেসি, ছয়ে কোহলি
+                              </h5>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                      <div class="row-news-bg">
+                          <img src="../../home/img/9.jpg" class="row-image-bg" alt="">
+                          <a href="entertenmet/demo/index.html">
+                              <h5>
+                                সবার ওপরে রোনালদো, দুইয়ে মেসি, ছয়ে কোহলি
+                              </h5>
+                          </a>
+                      </div>
+                  </div>
+  
+  
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                      <div class="row-news-bg">
+                          <img src="../../home/img/10.jpg" class="row-image-bg" alt="">
+                          <a href="#">
+                              <h5>
+                                সবার ওপরে রোনালদো, দুইয়ে মেসি, ছয়ে কোহলি
+                              </h5>
+                          </a>
+                      </div>
+                  </div>
+  
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                      <div class="row-news-bg">
+                          <img src="../../home/img/26.jpg" class="row-image-bg" alt="">
+                          <a href="#">
+                              <h5>
+                                সবার ওপরে রোনালদো, দুইয়ে মেসি, ছয়ে কোহলি
+                                </h5>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                    <div class="row-news-bg">
+                        <img src="../../home/img/7.jpg" class="row-image-bg">
+                        <a href="top%20page/top/index.html">
+                            <h5>
+                              সবার ওপরে রোনালদো, দুইয়ে মেসি, ছয়ে কোহলি
+                            </h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                    <div class="row-news-bg">
+                        <img src="../../home/img/9.jpg" class="row-image-bg" alt="">
+                        <a href="entertenmet/demo/index.html">
+                            <h5>
+                              সবার ওপরে রোনালদো, দুইয়ে মেসি, ছয়ে কোহলি
+                            </h5>
+                        </a>
+                    </div>
+                </div>
+  
+  
+                <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                    <div class="row-news-bg">
+                        <img src="../../home/img/10.jpg" class="row-image-bg" alt="">
+                        <a href="#">
+                            <h5>
+                              সবার ওপরে রোনালদো, দুইয়ে মেসি, ছয়ে কোহলি
+                            </h5>
+                        </a>
+                    </div>
+                </div>
+  
+                <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                    <div class="row-news-bg">
+                        <img src="../../home/img/26.jpg" class="row-image-bg" alt="">
+                        <a href="#">
+                            <h5>
+                              সবার ওপরে রোনালদো, দুইয়ে মেসি, ছয়ে কোহলি</h5>
+                        </a>
+                    </div>
+                </div>
+  
+  
+              </div>
+              </div>
+          </div>
         </div>
-          </body>
-          <script type="text/javascript">
-        
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-36251023-1']);
-          _gaq.push(['_setDomainName', 'jqueryscript.net']);
-          _gaq.push(['_trackPageview']);
-        
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-        
-        </script>
-
+       
+      </div>
+      <!-- end single news -->
+      <div class="col-xl-3 col-md-12 col-lg-12 col-12">
+        <div class="row mt-5">
+          <div class="col">
+            <div class="single-news-sidebar">
+              <div class="row-category-title">
+                <h6>
+                  <i class="fa fa-barcode text-success"></i>
+                  <span class="text-secondary">
+                    ট্রেন্ডিং টপিকস
+                  </span>
+                </h6>
+              </div>
+              <div class="media-board bg-secondary p-1">
+                <span class="tag-white">Lorem, ipsum.</span><span class="tag-white">Lorem, ipsum.</span><span
+                  class="tag-white">Lorem, ipsum.</span><span class="tag-white">Lorem, ipsum.</span><span
+                  class="tag-white">Lorem, ipsum.</span><span class="tag-white">Lorem, ipsum.</span><span
+                  class="tag-white">Lorem, ipsum.</span><span class="tag-white">Lorem, ipsum.</span><span
+                  class="tag-white">Lorem, ipsum.</span><span class="tag-white">Lorem ipsum dolor sit amet.</span>
+              </div>
+            </div>
+          </div>  
         </div>
-
+        
+        <div class="row mt-5">
+          <div class="col">
+            <div class="single-news-sidebar">
+              <div class="row-category-title mb-3">
+                <h6>
+                  <i class="fa fa-barcode text-success"></i>
+                  <span class="text-secondary">
+                    মিস করবেন না
+                  </span>
+                </h6>
+              </div>
+              <div class="owl-carousel owl-theme media-group">
+                <div class="media" style="border: none;">
+                  <img class="align-self-center mr-1 row-image-sm-auto" src="../../home/photo/1.jpg" "
+                  alt=" Generic placeholder image">
+                  <div class="media-body">
+                    <a href="#">
+                      <h6 class="mt-0">এয়ারলাইন্সের অভ্যন্তরীণ তিন রুটে। ব্যবসায়ীরা বিপর্যস্ট</h6>
+                    </a>
+                  </div>
+                </div>
+                <div class="media" style="border: none;">
+                  <img class="align-self-center mr-1  row-image-sm-auto" src="../../home/photo/2.jpg"
+                    alt="Generic placeholder image">
+                  <div class="media-body">
+                    <a href="#">
+                      <h6 class="mt-0">এয়ারলাইন্সের অভ্যন্তরীণ তিন রুটে। ব্যবসায়ীরা বিপর্যস্ট</h6>
+                    </a>
+                  </div>
+                </div>
+                <div class="media" style="border: none;">
+                  <img class="align-self-center mr-1  row-image-sm-auto" src="../../home/photo/3.jpg"
+                    alt="Generic placeholder image">
+                  <div class="media-body">
+                    <a href="#">
+                      <h6 class="mt-0">এয়ারলাইন্সের অভ্যন্তরীণ তিন রুটে। ব্যবসায়ীরা বিপর্যস্ট</h6>
+                    </a>
+                  </div>
+                </div>
+                <div class="media" style="border: none;">
+                  <img class="align-self-center mr-1  row-image-sm-auto" src="../../home/photo/3.jpg"
+                    alt="Generic placeholder image">
+                  <div class="media-body">
+                    <a href="#">
+                      <h6 class="mt-0">এয়ারলাইন্সের অভ্যন্তরীণ তিন রুটে। ব্যবসায়ীরা বিপর্যস্ট</h6>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
        
+        
+        <div class="row mt-5">
+          <div class="col">
+            <div class="single-news-sidebar">
+              <div class="row-category-title">
+                <h6>
+                  <i class="fa fa-barcode text-success"></i>
+                  <span class="text-secondary">
+                    টপ নিউজ
+                  </span>
+                </h6>
+              </div>
+              <div class="media-group">
+                <div class="media">
+                  <img class="align-self-center mr-1 row-image-sm" src="../../home/photo/1.jpg" "
+                  alt=" Generic placeholder image">
+                  <div class="media-body">
+                    <a href="#">
+                      <h6 class="mt-0">এয়ারলাইন্সের অভ্যন্তরীণ তিন রুটে। ব্যবসায়ীরা বিপর্যস্ট</h6>
+                    </a>
+                  </div>
+                </div>
+                <div class="media">
+                  <img class="align-self-center mr-1  row-image-sm" src="../../home/photo/2.jpg"
+                    alt="Generic placeholder image">
+                  <div class="media-body">
+                    <a href="#">
+                      <h6 class="mt-0">এয়ারলাইন্সের অভ্যন্তরীণ তিন রুটে। ব্যবসায়ীরা বিপর্যস্ট</h6>
+                    </a>
+                  </div>
+                </div>
+                <div class="media">
+                  <img class="align-self-center mr-1  row-image-sm" src="../../home/photo/3.jpg"
+                    alt="Generic placeholder image">
+                  <div class="media-body">
+                    <a href="#">
+                      <h6 class="mt-0">এয়ারলাইন্সের অভ্যন্তরীণ তিন রুটে। ব্যবসায়ীরা বিপর্যস্ট</h6>
+                    </a>
+                  </div>
+                </div>
+                <div class="media">
+                  <img class="align-self-center mr-1  row-image-sm" src="../../home/photo/3.jpg"
+                    alt="Generic placeholder image">
+                  <div class="media-body">
+                    <a href="#">
+                      <h6 class="mt-0">এয়ারলাইন্সের অভ্যন্তরীণ তিন রুটে। ব্যবসায়ীরা বিপর্যস্ট</h6>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
 
+        <div class="row mt-5">
+          <div class="col">
+            <div class="single-news-sidebar">
+              <div class="row-category-title mb-3">
+                <h6>
+                  <i class="fa fa-barcode text-success"></i>
+                  <span class="text-secondary">
+                    জাতীয় খবর
+                  </span>
+                </h6>
+              </div>
+              <div class="owl-carousel owl-theme media-group">
+                <div class="media" style="border: none;">
+                  <img class="align-self-center mr-1 row-image-sm-auto" src="../../home/photo/1.jpg" "
+                  alt=" Generic placeholder image">
+                  <div class="media-body">
+                    <a href="#">
+                      <h6 class="mt-0">এয়ারলাইন্সের অভ্যন্তরীণ তিন রুটে। ব্যবসায়ীরা বিপর্যস্ট</h6>
+                    </a>
+                  </div>
+                </div>
+                <div class="media" style="border: none;">
+                  <img class="align-self-center mr-1  row-image-sm-auto" src="../../home/photo/2.jpg"
+                    alt="Generic placeholder image">
+                  <div class="media-body">
+                    <a href="#">
+                      <h6 class="mt-0">এয়ারলাইন্সের অভ্যন্তরীণ তিন রুটে। ব্যবসায়ীরা বিপর্যস্ট</h6>
+                    </a>
+                  </div>
+                </div>
+                <div class="media" style="border: none;">
+                  <img class="align-self-center mr-1  row-image-sm-auto" src="../../home/photo/3.jpg"
+                    alt="Generic placeholder image">
+                  <div class="media-body">
+                    <a href="#">
+                      <h6 class="mt-0">এয়ারলাইন্সের অভ্যন্তরীণ তিন রুটে। ব্যবসায়ীরা বিপর্যস্ট</h6>
+                    </a>
+                  </div>
+                </div>
+                <div class="media" style="border: none;">
+                  <img class="align-self-center mr-1  row-image-sm-auto" src="../../home/photo/3.jpg"
+                    alt="Generic placeholder image">
+                  <div class="media-body">
+                    <a href="#">
+                      <h6 class="mt-0">এয়ারলাইন্সের অভ্যন্তরীণ তিন রুটে। ব্যবসায়ীরা বিপর্যস্ট</h6>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
 
-
-
-    </div> 
-</div>
-</div>
-
-
-</div>
-
-</div>
-
-<!-- ..........................fotter strat ........................................-->
-
-<footer class="hero"style="width:100%;">
-    
-  <div class="container"style="border-bottom: none;max-width:1300px;">
-     <img src=" ../image/00.png " style="width:300px;height:100px;"alt="">
-    <div class="row">
       
-     <div class="col-xl-2 col-6">
-      
-      <ul >
-     <a href="#"><li>প্রচ্ছদ</li></a>
-        <a href="#"><li>বাংলাদেশ</li></a>
-        <a href="#"><li>আন্তর্জাতিক</li></a>
-        <a href="#"><li>অর্থনীতি</li></a>
-       
-      </ul>
-      
-   </div>
-
-<div class="col-xl-2 col-6">
-        
-      <ul>
-       <a href="#"><a href="#"> <li>খেলা</li></a>
-        <a href="#"><li>মতামত</li></a>
-       <a href="#"> <li> বিনোদন</li></a>
-        <a href="#"><li>ফিচার</li></a>
-       
-
-      </ul>
-      </div>
-   
-<div class="col-xl-2 col-6">
-        
-      <ul>
-
-        <a href="#"><li>জীবনযাপন</li></a>
-        <a href="#"><li>বিজ্ঞান ও প্রযুক্তি</li></a>
-        <a href="#"><li> অন্য আলো</li></a>
-        <a href="#"><li>পাঁচমিশালি</li></a>
-       
-      </ul>
-      </div>
-    
-<div class="col-xl-2 col-6">
-        
-      <ul>
-        <a href="#"><li> আমরা</li></a>
-        <a href="#"><li>শিক্ষা</li></a>
-        <a href="#"><li>মিরাজ ইসলাম</li></a>
-        <a href="#"><li>মিরাজ ইসলাম</li></a>
-       
-
-      </ul>
-      </div>
-   <div class="col-xl-2 col-6">
-        
-      <ul >
-        <a href="#"><li>মিরাজ ইসলাম</li></a>
-        <a href="#"><li>মিরাজ ইসলাম</li></a>
-        <a href="#"><li>মিরাজ ইসলাম</li></a>
-        <a href="#"><li>মিরাজ ইসলাম</li></a>
-      
-
-    </ul>
-      </div>
-   <div class="col-xl-2 col-6">
-    
-      <ul >
-        <a href="#"><li><i class="fa fa-camera"><span>  ছবি</span></i></li></a> 
-        <a href="#"><li><i class='fas fa-video'>ভিডিও</i></li></a>
-        
-
-
-
-        <a href="#"><li><i class='fas fa-file-audio'></i>আর্কাইভ</li></a>
-        <a href="#"><li>মিরাজ ইসলাম</li></a>
-       
-
-      </ul>
-      </div>
+    </div>
+  </div> <!-- first -->
+  
  
-
-</div>
-  </div>
-
-<div class="container" style="max-width:1300px;">
-<div class="row"> 
-<div class="col-xl-8 col-12">  
-<div class="Top-Trends">
-<p> Top-Trends</p>
-<ul>
- <a href="#" class="link1"> <li>Horoscope Today</li></a>
-  <a href="#" class="link1"><li>Nisarga Cyclone</li></a>
-  <a href="#" class="link1"><li> Dhaka Covid-19</li></a>
-  <a href="#" class="link1"><li> Mani Ratnam</li></a>
-  <a href="#" class="link1"><li>Sonakshi Sinha</li></a>
-  </ul>
-</div>
-
-</div>    
-
-
-
-<div class="col-xl-4 col-12">  
-  <p >Follow us on:</p>
-  <div class="iconf"> 
-  <ul>  
-
-  <a href="#"><li class="icons2" style="border:none;"><i class='fab fa-facebook-square' style='font-size:48px;color:blue'></i> </li></a>
-  <a href="#"><li class="icons2" style="border:none;"><i class='fab fa-youtube' style='font-size:48px;color:red'></i></li></a>
-  <a href="#"><li class="icons2" style="border:none;"><i class='fab fa-twitter-square' style="font-size:48px;color: 
-#9999FF"></i></li></a>
-  <a href="#"><li class="icons2" style="border:none;"><i class='fab fa-linkedin' style="font-size:48px;color: 
-#9999FF"></i></li></a>
-  <a href="#"><li class="icons2" style="border:none;"><i class='fab fa-instagram' style="font-size:48px;color: 
-#FF9900;"></i></li></a>
   
 
-   </ul>
-   </div>
-   </div>
-</div>  
-</div>
-
-
-
-</footer>
-
-<!-- footar end -->
-
-
-
-<!--  2nd footar strat -->
-
-<footer class="hero2">  
-<div class="container" style="max-width: 1300px;">
-
-
-
-<div class="row">
-<div class="col-xl-12 col-12">
-  
-
-<p>partnersites</p>
-<div class="second-footer">
-<ul >
-        <a href="#"><li>মিরাজ ইসলাম </li></a>
-        <a href="#"><li>মিরাজ ইসলাম</li></a>
-        <a href="#"><li>মিরাজ ইসলাম</li></a>
-        <a href="#"><li>মিরাজ ইসলাম</li></a>
-        <a href="#"><li>মিরাজ ইসলাম</li></a>
-        <a href="#"><li>মিরাজ ইসলাম</li></a>
-        <a href="#"><li>মিরাজ ইসলাম</li></a>
-        <a href="#"><li>মিরাজ ইসলাম</li></a>
-
-</ul>
-</div>
-
-<div class="last" style="float: right; ">
-
-<ul>
-      <a href="#"><li>About us</li></a>
-        <a href="#"><li> Privacy policy</li></a>
-        <a href="#"><li> Contact us</li></a>
-        <a href="#"><li>Terms of Use</li></a>
-        <a href="#"><li>Disclaimer</li></a>
-        <a href="#"><li>   Print Ad rates</li></a>
-        <a href="#"><li> Jobs</li></a>
-
-</ul>
-
-</div>
-</div>
-
-</div>
-</div>
-
-
-</footer>
+  <!-- end -->
 
 
 
 
-
-<!--.............................. fixed slider ..........................-->
+  <!--..................................... top side end ............................................................................-->
 
 
 
@@ -1055,6 +768,295 @@
 
 
 
+  <!-- ...............................top new start .....................................................................-->
+
+ 
+  <!-- ..........................fotter strat ........................................-->
+
+  <footer class="hero mt--15" style="width:100%;">
+
+    <div class="container" style="border-bottom: none;max-width:1300px;">
+      <img src=" ../image/00.png " style="width:300px;height:100px;" alt="">
+      <div class="row">
+
+        <div class="col-xl-2 col-6">
+
+          <ul>
+            <a href="#">
+              <li>প্রচ্ছদ</li>
+            </a>
+            <a href="#">
+              <li>বাংলাদেশ</li>
+            </a>
+            <a href="#">
+              <li>আন্তর্জাতিক</li>
+            </a>
+            <a href="#">
+              <li>অর্থনীতি</li>
+            </a>
+
+          </ul>
+
+        </div>
+
+        <div class="col-xl-2 col-6">
+
+          <ul>
+            <a href="#"><a href="#">
+                <li>খেলা</li>
+              </a>
+              <a href="#">
+                <li>মতামত</li>
+              </a>
+              <a href="#">
+                <li> বিনোদন</li>
+              </a>
+              <a href="#">
+                <li>ফিচার</li>
+              </a>
+
+
+          </ul>
+        </div>
+
+        <div class="col-xl-2 col-6">
+
+          <ul>
+
+            <a href="#">
+              <li>জীবনযাপন</li>
+            </a>
+            <a href="#">
+              <li>বিজ্ঞান ও প্রযুক্তি</li>
+            </a>
+            <a href="#">
+              <li> অন্য আলো</li>
+            </a>
+            <a href="#">
+              <li>পাঁচমিশালি</li>
+            </a>
+
+          </ul>
+        </div>
+
+        <div class="col-xl-2 col-6">
+
+          <ul>
+            <a href="#">
+              <li> আমরা</li>
+            </a>
+            <a href="#">
+              <li>শিক্ষা</li>
+            </a>
+            <a href="#">
+              <li>মিরাজ ইসলাম</li>
+            </a>
+            <a href="#">
+              <li>মিরাজ ইসলাম</li>
+            </a>
+
+
+          </ul>
+        </div>
+        <div class="col-xl-2 col-6">
+
+          <ul>
+            <a href="#">
+              <li>মিরাজ ইসলাম</li>
+            </a>
+            <a href="#">
+              <li>মিরাজ ইসলাম</li>
+            </a>
+            <a href="#">
+              <li>মিরাজ ইসলাম</li>
+            </a>
+            <a href="#">
+              <li>মিরাজ ইসলাম</li>
+            </a>
+
+
+          </ul>
+        </div>
+        <div class="col-xl-2 col-6">
+
+          <ul>
+            <a href="#">
+              <li><i class="fa fa-camera"><span> ছবি</span></i></li>
+            </a>
+            <a href="#">
+              <li><i class='fas fa-video'>ভিডিও</i></li>
+            </a>
+
+
+
+
+            <a href="#">
+              <li><i class='fas fa-file-audio'></i>আর্কাইভ</li>
+            </a>
+            <a href="#">
+              <li>মিরাজ ইসলাম</li>
+            </a>
+
+
+          </ul>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="container" style="max-width:1300px;">
+      <div class="row">
+        <div class="col-xl-8 col-12">
+          <div class="Top-Trends">
+            <p> Top-Trends</p>
+            <ul>
+              <a href="#" class="link1">
+                <li>Horoscope Today</li>
+              </a>
+              <a href="#" class="link1">
+                <li>Nisarga Cyclone</li>
+              </a>
+              <a href="#" class="link1">
+                <li> Dhaka Covid-19</li>
+              </a>
+              <a href="#" class="link1">
+                <li> Mani Ratnam</li>
+              </a>
+              <a href="#" class="link1">
+                <li>Sonakshi Sinha</li>
+              </a>
+            </ul>
+          </div>
+
+        </div>
+
+
+
+        <div class="col-xl-4 col-12">
+          <p>Follow us on:</p>
+          <div class="iconf">
+            <ul>
+
+              <a href="#">
+                <li class="icons2" style="border:none;"><i class='fab fa-facebook-square'
+                    style='font-size:48px;color:blue'></i> </li>
+              </a>
+              <a href="#">
+                <li class="icons2" style="border:none;"><i class='fab fa-youtube' style='font-size:48px;color:red'></i>
+                </li>
+              </a>
+              <a href="#">
+                <li class="icons2" style="border:none;"><i class='fab fa-twitter-square' style="font-size:48px;color: 
+#9999FF"></i></li>
+              </a>
+              <a href="#">
+                <li class="icons2" style="border:none;"><i class='fab fa-linkedin' style="font-size:48px;color: 
+#9999FF"></i></li>
+              </a>
+              <a href="#">
+                <li class="icons2" style="border:none;"><i class='fab fa-instagram' style="font-size:48px;color: 
+#FF9900;"></i></li>
+              </a>
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </footer>
+
+  <!-- footar end -->
+
+
+
+  <!--  2nd footar strat -->
+
+  <footer class="hero2">
+    <div class="container" style="max-width: 1300px;">
+
+
+
+      <div class="row">
+        <div class="col-xl-12 col-12">
+
+
+          <p>partnersites</p>
+          <div class="second-footer">
+            <ul>
+              <a href="#">
+                <li>মিরাজ ইসলাম </li>
+              </a>
+              <a href="#">
+                <li>মিরাজ ইসলাম</li>
+              </a>
+              <a href="#">
+                <li>মিরাজ ইসলাম</li>
+              </a>
+              <a href="#">
+                <li>মিরাজ ইসলাম</li>
+              </a>
+              <a href="#">
+                <li>মিরাজ ইসলাম</li>
+              </a>
+              <a href="#">
+                <li>মিরাজ ইসলাম</li>
+              </a>
+              <a href="#">
+                <li>মিরাজ ইসলাম</li>
+              </a>
+              <a href="#">
+                <li>মিরাজ ইসলাম</li>
+              </a>
+
+            </ul>
+          </div>
+
+          <div class="last" style="float: right; ">
+
+            <ul>
+              <a href="#">
+                <li>About us</li>
+              </a>
+              <a href="#">
+                <li> Privacy policy</li>
+              </a>
+              <a href="#">
+                <li> Contact us</li>
+              </a>
+              <a href="#">
+                <li>Terms of Use</li>
+              </a>
+              <a href="#">
+                <li>Disclaimer</li>
+              </a>
+              <a href="#">
+                <li> Print Ad rates</li>
+              </a>
+              <a href="#">
+                <li> Jobs</li>
+              </a>
+
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </footer>
+
+
+
+
+
+  <!--.............................. fixed slider ..........................-->
 
 
 
@@ -1063,49 +1065,58 @@
 
 
 
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/jquery-3.2.1.slim.min.js"></script>
-    <script src="../js/popper.min.js"></script>
- <script src="../js/jquery-1.12.4.min.js"></script>
- <script src="../js/vertical.news.slider.min.js"></script>
- <script src="../js/index.js"></script>
-
-
-
- <script src="../js/jquery-3.1.1.min.js"></script>
- <!-- bxSlider Javascript file -->
- <script src="../js/jquery.bxslider.js"></script>
 
 
 
 
 
 
- <script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> 
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+  <script src="../js/vertical.news.slider.min.js"></script>
+
+
+  <!-- bxSlider Javascript file -->
+  <script src="../js/jquery.bxslider.js"></script>
+
+
+
+
+
+
+  <script>
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-1965499-1']);
     _gaq.push(['_trackPageview']);
 
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    (function () {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
+      '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
     })();
   </script>
   <script>
-	$(document).ready(function(){
-		$('.bxslider').bxSlider({
-			mode: 'horizontal',
-			moveSlides: 1,
-			slideMargin: 40,
-			infiniteLoop: true,
-			slideWidth: 660,
-			minSlides: 3,
-			maxSlides: 3,
-			speed: 800,
-		});
-	});
-</script>
+    $(document).ready(function () {
+      $('.bxslider').bxSlider({
+        mode: 'horizontal',
+        moveSlides: 1,
+        slideMargin: 40,
+        infiniteLoop: true,
+        slideWidth: 660,
+        minSlides: 3,
+        maxSlides: 3,
+        speed: 800,
+      });
+    });
+  </script>
+    <script src="../../js/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../js/index.js"></script>
 
 </body>
+
 </html>

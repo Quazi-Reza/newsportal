@@ -1,3 +1,14 @@
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:1,
+    loop:true,
+    autoplay:true,
+    autoWidth:false,
+    dots:true,
+    autoplayTimeout:6000,
+    autoplayHoverPause:true
+});
+
 $('.slider').each(function() {
   var $this   = $(this);
   var $group  = $this.find('.slide-group');
