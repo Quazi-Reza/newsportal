@@ -7,6 +7,8 @@
     <title>বরিশাল টাইমস চেতনাই বাংলাদেশ</title>
     <link rel="icon" href="home/photo/bt.png">
     <link rel="stylesheet" href="home/css/bootstrap.min.css">
+    <link rel="stylesheet" href="home/css/default.css">
+    <link rel="stylesheet" href="home/css/component.css">
     <link rel="stylesheet" href="home/Home%20page/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" integrity="sha512-X/RSQYxFb/tvuz6aNRTfKXDnQzmnzoawgEQ4X8nZNftzs8KFFH23p/BA6D2k0QCM4R0sY1DEy9MIY9b3fwi+bg==" crossorigin="anonymous" />
 
@@ -22,8 +24,6 @@
     </script>
     
 </head>
-
-
 
 
 
@@ -64,30 +64,76 @@
                             <li class="nav-item">
                                 <a class="nav-link disabled" href="#">মতামত</a>
                             </li>
-                            <li class="dropdown">
-                                <a href="javascript:void(0)" class="dropbtn" style="color: gray;">সব<i
-                                        class="fas fa-caret-down"></i></a>
-                                <div class="dropdown-content">
-                                    <a href="#">প্রচ্ছদ</a>
-                                    <a href="#">বাংলাদেশ</a>
-                                    <a href="#">আন্তজাতিক</a>
-                                    <a href="#">বিনোদন</a>
-                                    <a href="#">মতামত</a>
-                                    <a href="#">খেলা</a>
-                                    <a href="#">মতামত</a>
-                                    <a href="#">খেলা</a>
-                                    <a href="#"> বিনোদন</a>
-                                    <a href="#">ফিচার</a>
-                                    <a href="#">অন্য আলো</a>
-                                    <a href="#">আমরা</a>
-                                    <a href="#">পাঁচমিশালি</a>
-                                    <a href="#">বিশেষ সংখ্যা</a>
-                                    <a href="#">শিক্ষা</a>
-                                    <a href="#">পাঁচমিশালি</a>
-                                    <a href="#">বিশেষ সংখ্যা</a>
-                                </div>
-                            </li>
-                        </ul>
+                            <nav id="cbp-hrmenu" class="cbp-hrmenu">
+                                <ul>
+                                  <li  style="margin-left:padding-left:-50px;">
+                                      <a href="#"><i class="fas fa-bars"><span style="padding-left: 10px;font-size: 15px;">সব</span></a></i>
+                                    <div class="cbp-hrsub"style="background-color:#FFFFF0;">
+                                      <div class="cbp-hrsub-inner"style="border-bottom:1px solid gray;"> 
+                                        <div>
+                                         
+                                          <ul>
+                                            <li><a href="#">প্রচ্ছদ</a></li>
+                                            <li><a href="#">বাংলাদেশ</a></li>
+                                            <li><a href="#">  আন্তর্জাতিক</a></li>
+                                            <li><a href="#">অর্থনীতি</a></li>
+                          
+                                           
+                                          </ul>
+                                        </div>
+                                        <div>
+                                      
+                                          <ul>
+                                            <li><a href="#">বিনোদন</a></li>
+                                            <li><a href="#"> ফিচার</a></li>
+                                            <li><a href="#"> বিজ্ঞান ও প্রযুক্তি</a></li>
+                                            <li><a href="#"> জীবনযাপন</a></li>
+                                            
+                                          </ul>
+                                        </div>
+                                        <div>
+                                          
+                                          <ul>
+                                            <li><a href="#"> অন্য আলো</a></li>
+                                            <li><a href="#">  আমরা</a></li>
+                                            <li><a href="#"> পাঁচমিশালি</a></li>
+                                            <li><a href="#">বিশেষ সংখ্যা</a></li>
+                                          </ul>
+                                        </div>
+                          
+                          
+                                         <div>
+                                          <ul>
+                                            <li><a href="#">বিশেষ সংখ্যা</a></li>
+                                            <li><a href="#">চাকরি</a></li>
+                                            <li><a href="#">দূর পরবাস</a></li>
+                                            <li><a href="#"> নাগরিক সংবাদ</a></li>
+                                          </ul>
+                                        </div> 
+                                        <div>
+                                          <ul>
+                                            <li><a href="#">বিশেষ সংখ্যা</a></li>
+                                            <li><a href="#">চাকরি</a></li>
+                                            <li><a href="#">দূর পরবাস</a></li>
+                                            <li><a href="#"> নাগরিক সংবাদ</a></li>
+                                          </ul>
+                                        </div> 
+                                        
+                                      </div><!-- /cbp-hrsub-inner -->
+                                    
+                                      
+                                       
+                                    </div><!-- /cbp-hrsub -->
+                                    </nav>
+                                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                                    <script src="home/js/cbpHorizontalMenu.min.js"></script>
+                                    <script>
+                                      $(function() {
+                                        cbpHorizontalMenu.init();
+                                      });
+                                    </script>
+                                  </li>
+                                </ul>
                         <span class="nav-link">
                             <ul>
                                 <li class="nav-item">
@@ -95,10 +141,8 @@
                                         href="#">English</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link disabled" style="" href="#"> <span
-                                            style="margin-left: -15px;"><img src="home/photo/1.png"
-                                                style="width: 40px; height: 40px;border-radius: 50%;" alt=""></span></a>
-                                </li>
+                                    <a class="nav-link disabled"style="" href="#"> <span style="margin-left: -15px;padding-top:20px;"><i class="fas fa-user-circle" style="font-size: 30px;"></i></span></a>
+                                  </li>
 
 
 
@@ -120,17 +164,15 @@
         </nav>
     </div>
 
-    <div class="container">
-        <!--    Marquee text-->
-        <div class="row mb-2">
+    <div class="d-none d-xl-block">
+        <div class="container" style="width: 1300px;padding-top:100px;">
+        <div class="row">
             <div class="col-md-12 col-xl-12 col-lg-12 col-12 col-sm-12">
-                <div class="marquee">
-                    <p> **নাসিমা সুলতানা অবশ্য বরিশাল টাইমসকে বলেন,এখন ৫০ শয্যার বেশি যেকোনো
-                        হাসপাতালে**&nbsp;&nbsp;&nbsp;** সরকারঘোষিত সাধারণ ছুটির প্রথমদিন থেকেই কর্মহীন হয়ে ছুটির
-                        প্রথমদিন
-                        **</p>
-                </div>
-            </div>
+        <marquee style="background: linear-gradient(to right, #00ff00 0%, #ff0000 100%);
+        } height: 50px;width: 1300px; "><h6 style="color:#fff; margin-top: 15px;">**নাসিমা সুলতানা অবশ্য বরিশাল টাইমসকে বলেন,এখন ৫০ শয্যার বেশি যেকোনো হাসপাতালে**&**নাসিমা সুলতানা অবশ্য বরিশাল টাইমসকে বলেন,এখন ৫০ শয্যার বেশি যেকোনো হাসপাতালে**</h6></marquee>
+           </div> 
+          </div>
+          </div>
         </div>
         <!--    End marquee text-->
 
